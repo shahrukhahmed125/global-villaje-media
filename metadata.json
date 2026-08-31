@@ -1,0 +1,6 @@
+{
+  "name": "Global Villaje Media",
+  "description": "Enterprise-grade website for Global Villaje Media - Trusted Health Communication, Culturally Responsive Engagement & Community Storytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

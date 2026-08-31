@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echoes of Us | Legacy and Community Storytelling</title>
+  <meta name="description" content="Echoes of Us preserves stories of identity, migration, family, care and belonging through guided conversations, audio, film and community story circles.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerLogo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="220" height="48">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About GVM</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link active">Programmes &amp; Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link active">Echoes of Us (Legacy Films)</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link">Documentary &amp; Storytelling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="watch-and-listen.html" class="nav-link">
+              Watch &amp; Listen
+              <span class="nav-live-pill"><i class="fas fa-play" style="font-size: 0.55rem;"></i> Videos</span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-youtube-nav btn-sm" id="headerYoutubeBtn">
+          <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </a>
+        <a href="work-with-us.html" class="btn btn-primary btn-sm" id="headerCtaBtn">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="195" height="44">
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About GVM</a></li>
+      <li>
+        <a href="programmes-and-services.html" class="mobile-nav-link active">Programmes &amp; Services</a>
+        <ul class="mobile-submenu">
+          <li><a href="health-wellness-wellbeing-hour.html" class="mobile-submenu-link">• The Health, Wellness &amp; Wellbeing Hour</a></li>
+          <li><a href="echoes-of-us.html" class="mobile-submenu-link active">• Echoes of Us (Legacy Films)</a></li>
+          <li><a href="caring-with-confidence.html" class="mobile-submenu-link">• Caring with Confidence™</a></li>
+          <li><a href="campaign-in-a-box.html" class="mobile-submenu-link">• Campaign in a Box</a></li>
+          <li><a href="black-health-awareness-campaigns.html" class="mobile-submenu-link">• Black Health Awareness Campaigns</a></li>
+          <li><a href="documentary-storytelling.html" class="mobile-submenu-link">• Documentary &amp; Storytelling</a></li>
+        </ul>
+      </li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch &amp; Listen (YouTube Videos)</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link">Our Work &amp; Case Studies</a></li>
+      <li><a href="insights.html" class="mobile-nav-link">Insights &amp; Articles</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem;">
+      <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-block w-full">
+        <i class="fab fa-youtube"></i> Subscribe @GlobalVillajeMedia
+      </a>
+      <a href="work-with-us.html" class="btn btn-primary btn-block w-full">Commission / Partner</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <!-- HERO -->
+    <section class="page-header-section">
+      <div class="container page-header-content">
+        <span class="badge badge-accent">Community & Legacy Programme</span>
+        <h1 class="page-header-title">Echoes of Us</h1>
+        <p class="page-header-lead">
+          Preserving memory, identity and lived experience through storytelling.
+        </p>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+          Echoes of Us helps individuals, families and communities record and preserve stories of identity, migration, family, care, resilience and belonging through guided conversations, story circles, audio and film.
+        </p>
+        <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#howItWorks" class="btn btn-secondary"><i class="fas fa-list-ol"></i> Explore How It Works</a>
+          <a href="work-with-us.html" class="btn btn-primary"><i class="fas fa-handshake"></i> Commission or Support Echoes of Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORIES THAT CONNECT -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="badge badge-primary mb-3">Preserving Living Heritage</span>
+            <h2 class="section-title">Stories that connect generations and communities</h2>
+            <p>
+              Every family and community carries memories, knowledge and experiences that deserve to be preserved. Echoes of Us creates supportive opportunities for people to reflect, share and record the stories that shaped who they are.
+            </p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.25rem;">More than recording a memory</h3>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check-circle" style="color: var(--color-accent);"></i> Preserve personal and community history.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check-circle" style="color: var(--color-accent);"></i> Strengthen intergenerational connection.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check-circle" style="color: var(--color-accent);"></i> Recognise lived experience.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check-circle" style="color: var(--color-accent);"></i> Build community connection.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check-circle" style="color: var(--color-accent);"></i> Create a lasting audio, film or digital record.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="hero-image-card">
+              <img src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?auto=format&fit=crop&w=800&q=80" alt="Echoes of Us intergenerational storytelling">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO ROUTES -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-accent">Programme Pathways</span>
+          <h2 class="section-title">Two ways to experience Echoes of Us</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+          <!-- Route 1 -->
+          <div style="background: #ffffff; padding: 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+            <div class="floating-icon" style="background: var(--color-primary-subtle); color: var(--color-primary); margin-bottom: 1.25rem;">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 style="margin-bottom: 0.75rem;">Community Storytelling Programme</h3>
+            <p style="font-size: 0.95rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 1.5rem;">
+              A structured programme delivered with a community organisation, care provider, local authority, charity or cultural group, including story circles, individual recordings, edited stories and a sharing event.
+            </p>
+            
+            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--color-primary);">Illustrative community programme:</h4>
+            <ul style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+              <li>Story Circle One: Where We Come From.</li>
+              <li>Story Circle Two: Care, Family and Responsibility.</li>
+              <li>Story Circle Three: Belonging.</li>
+              <li>Six professionally edited audio stories.</li>
+              <li>Eight short social-media clips.</li>
+              <li>One community listening or sharing event.</li>
+              <li>A digital story page or collection.</li>
+              <li>A short activity and learning report.</li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--text-light); font-style: italic;">
+              The final structure and outputs are agreed with the commissioner and adapted to participants, consent, budget and purpose.
+            </p>
+          </div>
+
+          <!-- Route 2 -->
+          <div style="background: #ffffff; padding: 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+            <div class="floating-icon" style="background: var(--color-accent-light); color: #065f46; margin-bottom: 1.25rem;">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 style="margin-bottom: 0.75rem;">Individual and Family Legacy Stories</h3>
+            <p style="font-size: 0.95rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 1.5rem;">
+              A personal service for individuals or families wishing to record a life story, preserve memories or create a lasting audio or video legacy.
+            </p>
+
+            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--color-primary);">Individual and family outputs:</h4>
+            <ul style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+              <li>A recorded life-story conversation.</li>
+              <li>A professionally edited audio story.</li>
+              <li>A short legacy film.</li>
+              <li>An intergenerational family conversation.</li>
+              <li>A private digital recording for family members.</li>
+            </ul>
+            <a href="work-with-us.html" class="btn btn-secondary btn-sm">Enquire About a Legacy Story <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THEMES & WHO IT IS FOR -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem;">
+          <div>
+            <span class="badge badge-primary mb-3">Narrative Scope</span>
+            <h2 class="section-title">Possible story themes</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.5rem;">
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Childhood and family life</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Home, place and migration</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Culture, faith and traditions</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Education and work</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Parenthood and relationships</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Caring and responsibility</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Health and major life changes</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Community and belonging</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Challenges & achievement</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600;">Messages for future generations</div>
+            </div>
+          </div>
+
+          <div>
+            <span class="badge badge-accent mb-3">Participants & Commissioners</span>
+            <h2 class="section-title">Who can take part or commission?</h2>
+            <p>
+              Echoes of Us can support older adults, families, intergenerational groups, Black African and Caribbean communities, diaspora communities, unpaid carers, cultural groups and anyone wishing to preserve a significant life story.
+            </p>
+            <p>
+              Commissioners may include councils, NHS and public-health organisations, charities, care homes, carers’ organisations, housing associations, cultural organisations, universities, community groups and faith organisations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS: HOW IT WORKS -->
+    <section class="section section-subtle" id="howItWorks">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Structured Methodology</span>
+          <h2 class="section-title">How it works</h2>
+          <p class="section-lead">A step-by-step collaborative process ensuring contributor comfort, editorial care, and cultural respect.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">01</div>
+            <h4>Initial Conversation</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Initial conversation about purpose, participants, audience and format.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">02</div>
+            <h4>Planning & Consent</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Planning of themes, questions, consent and recording parameters.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">03</div>
+            <h4>Facilitated Sessions</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Individual, family or story-circle sessions guided with empathy.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">04</div>
+            <h4>Professional Production</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Professional audio/video recording, sound design, and master editing.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">05</div>
+            <h4>Participant Review</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Participant review where appropriate before final sign-off.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">06</div>
+            <h4>Delivery & Sharing</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Private delivery or agreed community listening and digital sharing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSENT AND CARE DISCLAIMER -->
+    <section class="section">
+      <div class="container container-narrow text-center">
+        <div style="background: #ffffff; padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 1.8rem; color: var(--color-primary); margin-bottom: 1rem;"><i class="fas fa-lock"></i></div>
+          <h3 style="margin-bottom: 1rem;">Stories shared with permission and respect</h3>
+          <p style="font-size: 0.95rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Participants decide what they want to share and can identify subjects they do not wish to discuss. GVM explains the intended use, audience and privacy arrangements before recording, and takes particular care with bereavement, trauma, ill health and caring experiences.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-light); border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            Echoes of Us is a storytelling and creative-media programme. It is not a clinical therapy or counselling service.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAS -->
+    <section class="section section-subtle">
+      <div class="container text-center">
+        <div style="max-width: 760px; margin: 0 auto; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 3.5rem; box-shadow: var(--shadow-lg);">
+          <span class="badge badge-accent mb-3">Commission Programme</span>
+          <h2 style="margin-bottom: 1rem;">Whose story should be preserved?</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+            A story does not have to be famous to be valuable. The memories, knowledge and experiences carried within families and communities deserve the opportunity to be heard and remembered.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="work-with-us.html" class="btn btn-primary">Commission a Community Programme <i class="fas fa-arrow-right"></i></a>
+            <a href="work-with-us.html" class="btn btn-secondary">Enquire About a Legacy Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-bio">
+          <a href="index.html" class="footer-logo" aria-label="Global Villaje Media Home">
+            <img src="assets/logo-horizontal-white.svg" alt="Global Villaje Media Logo" class="footer-logo-img" width="230" height="52">
+          </a>
+          <p>
+            Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us (Legacy Films)</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary &amp; Storytelling</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes &amp; Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch &amp; Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

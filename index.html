@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Villaje Media | Health Communication & Community Storytelling NGO</title>
+  <meta name="description" content="Global Villaje Media is a UK social-impact media NGO improving health literacy, addressing racial health inequalities, and promoting quality health through community storytelling, radio broadcasts, and video documentaries.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Subtle Background & Global Health Wave Canvas -->
+  <div class="ambient-bg" aria-hidden="true"></div>
+  <canvas id="ambientGlobalCanvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerLogo" aria-label="Global Villaje Media Home">
+        <div class="brand-logo-emblem">
+          <svg class="brand-emblem-svg" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+            <path d="M 122 45 Q 128 30 135 18" stroke="#084d3e" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+            <path d="M 134 18 C 146 14 158 20 156 30 C 145 32 136 26 134 18 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M 136 21 Q 146 24 152 26" stroke="#084d3e" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 125 32 C 114 22 110 32 114 40 C 120 42 125 38 125 32 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M 122 34 Q 117 32 113 35" stroke="#084d3e" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="98" cy="85" r="48" fill="#60b5e8" stroke="#084d3e" stroke-width="5.5"/>
+            <path d="M 72 50 C 78 43 95 40 108 42 C 118 44 125 49 130 55 C 133 60 128 66 122 68 C 114 70 102 65 96 68 C 88 72 82 78 75 75 C 68 72 65 60 72 50 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M 68 85 C 72 80 82 82 86 88 C 90 94 94 105 88 114 C 82 122 72 125 65 118 C 58 110 60 92 68 85 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M 115 80 C 122 78 132 82 138 90 C 142 98 138 108 130 114 C 124 118 118 115 116 108 C 114 98 110 88 115 80 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <ellipse cx="96" cy="115" rx="55" ry="14" fill="#ffffff" fill-opacity="0.25" stroke="#084d3e" stroke-width="5" transform="rotate(-6 96 115)"/>
+            <ellipse cx="94" cy="132" rx="42" ry="11" fill="none" stroke="#084d3e" stroke-width="5" transform="rotate(-4 94 132)"/>
+            <ellipse cx="92" cy="146" rx="28" ry="8" fill="none" stroke="#084d3e" stroke-width="5" transform="rotate(-2 92 146)"/>
+          </svg>
+        </div>
+        <div class="brand-logo-text-wrap">
+          <div class="brand-logo-title">
+            <span class="brand-logo-primary">GLOBAL VILLAJE</span>
+            <span class="brand-logo-badge">MEDIA</span>
+          </div>
+          <span class="brand-logo-tagline">COMMUNITY HEALTH &amp; STORYTELLING</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About GVM</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link">Programmes &amp; Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link">Echoes of Us (Legacy Films)</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link">Documentary &amp; Storytelling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="watch-and-listen.html" class="nav-link">
+              Watch &amp; Listen
+              <span class="nav-live-pill"><i class="fas fa-play" style="font-size: 0.55rem;"></i> Videos</span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-youtube-nav btn-sm" id="headerYoutubeBtn">
+          <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </a>
+        <a href="work-with-us.html" class="btn btn-primary btn-sm" id="headerCtaBtn">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <div class="brand-logo-emblem">
+          <svg class="brand-emblem-svg" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+            <path d="M 122 45 Q 128 30 135 18" stroke="#084d3e" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+            <path d="M 134 18 C 146 14 158 20 156 30 C 145 32 136 26 134 18 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M 136 21 Q 146 24 152 26" stroke="#084d3e" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 125 32 C 114 22 110 32 114 40 C 120 42 125 38 125 32 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <circle cx="98" cy="85" r="48" fill="#60b5e8" stroke="#084d3e" stroke-width="5.5"/>
+            <path d="M 72 50 C 78 43 95 40 108 42 C 118 44 125 49 130 55 C 133 60 128 66 122 68 C 114 70 102 65 96 68 C 88 72 82 78 75 75 C 68 72 65 60 72 50 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M 68 85 C 72 80 82 82 86 88 C 90 94 94 105 88 114 C 82 122 72 125 65 118 C 58 110 60 92 68 85 Z" fill="#78c932" stroke="#084d3e" stroke-width="4" stroke-linejoin="round"/>
+            <ellipse cx="96" cy="115" rx="55" ry="14" fill="#ffffff" fill-opacity="0.25" stroke="#084d3e" stroke-width="5" transform="rotate(-6 96 115)"/>
+            <ellipse cx="94" cy="132" rx="42" ry="11" fill="none" stroke="#084d3e" stroke-width="5" transform="rotate(-4 94 132)"/>
+            <ellipse cx="92" cy="146" rx="28" ry="8" fill="none" stroke="#084d3e" stroke-width="5" transform="rotate(-2 92 146)"/>
+          </svg>
+        </div>
+        <div class="brand-logo-text-wrap">
+          <div class="brand-logo-title">
+            <span class="brand-logo-primary">GLOBAL VILLAJE</span>
+            <span class="brand-logo-badge">MEDIA</span>
+          </div>
+          <span class="brand-logo-tagline">COMMUNITY HEALTH &amp; STORYTELLING</span>
+        </div>
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About GVM</a></li>
+      <li>
+        <a href="programmes-and-services.html" class="mobile-nav-link">Programmes &amp; Services</a>
+        <ul class="mobile-submenu">
+          <li><a href="health-wellness-wellbeing-hour.html" class="mobile-submenu-link">• The Health, Wellness &amp; Wellbeing Hour</a></li>
+          <li><a href="echoes-of-us.html" class="mobile-submenu-link">• Echoes of Us (Legacy Films)</a></li>
+          <li><a href="caring-with-confidence.html" class="mobile-submenu-link">• Caring with Confidence™</a></li>
+          <li><a href="campaign-in-a-box.html" class="mobile-submenu-link">• Campaign in a Box</a></li>
+          <li><a href="black-health-awareness-campaigns.html" class="mobile-submenu-link">• Black Health Awareness Campaigns</a></li>
+          <li><a href="documentary-storytelling.html" class="mobile-submenu-link">• Documentary &amp; Storytelling</a></li>
+        </ul>
+      </li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch &amp; Listen (YouTube Videos)</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link">Our Work &amp; Case Studies</a></li>
+      <li><a href="insights.html" class="mobile-nav-link">Insights &amp; Articles</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem;">
+      <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-block w-full">
+        <i class="fab fa-youtube"></i> Subscribe @GlobalVillajeMedia
+      </a>
+      <a href="work-with-us.html" class="btn btn-primary btn-block w-full">Commission / Partner</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- HERO SECTION (Revamped with 3D Broadcast Studio & Animated Health Waves) -->
+    <section class="hero-section" id="homeHero">
+      <!-- Dynamic Moving Audio Wave Canvas in Background -->
+      <canvas id="heroWaveCanvas" class="hero-wave-canvas" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-live-pill">
+              <span class="pulse-dot"></span>
+              <span>LIVE ON-AIR • THE HEALTH, WELLNESS &amp; WELLBEING HOUR</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Bridging Health Inequalities Through <span class="highlight-animated">Culturally Rooted</span> Stories &amp; Media.
+            </h1>
+            
+            <p class="hero-subtitle">
+              Global Villaje Media is a UK-based health communication NGO amplifying Black African and Caribbean voices, tackling health disparities, and empowering communities with trusted medical dialogues across radio broadcasts, video documentaries, and legacy storytelling.
+            </p>
+
+            <!-- Interactive Live Broadcast Preview Player -->
+            <div class="hero-audio-preview-bar" id="heroAudioBar">
+              <button class="hero-audio-play-btn" id="heroPlayAudioBtn" aria-label="Play Live Health Hour Audio Preview">
+                <i class="fas fa-play" id="heroPlayIcon"></i>
+              </button>
+              <div class="hero-audio-info">
+                <div class="hero-audio-title">The Health &amp; Wellbeing Hour • Live Audio Stream</div>
+                <div class="hero-audio-sub">
+                  <span>Broadcasting from Watford &amp; Brent</span>
+                  <span class="equalizer-bars" id="heroEqBars">
+                    <span class="eq-bar"></span>
+                    <span class="eq-bar"></span>
+                    <span class="eq-bar"></span>
+                    <span class="eq-bar"></span>
+                    <span class="eq-bar"></span>
+                  </span>
+                </div>
+              </div>
+              <span class="badge badge-primary" style="font-size: 0.72rem; padding: 0.25rem 0.55rem;"><i class="fas fa-tower-broadcast"></i> 104.5 FM</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#featuredVideos" class="btn btn-youtube" id="heroVideoBtn">
+                <i class="fab fa-youtube"></i> <span>Watch Videos on YouTube</span>
+              </a>
+              <a href="programmes-and-services.html" class="btn btn-primary" id="heroExploreBtn">
+                <span>Explore Programmes</span> <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="work-with-us.html" class="btn btn-secondary" id="heroWorkBtn">
+                <span>Commission / Partner</span> <i class="fas fa-handshake"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- 3D Interactive Broadcast Studio & Health Wave Core -->
+          <div class="hero-3d-wrapper">
+            <div class="hero-3d-stage" id="hero3dStage">
+              <!-- Three.js 3D Canvas -->
+              <canvas id="hero3dCanvas" class="hero-3d-canvas" aria-label="Interactive 3D Broadcast Studio & Community Health Wave Core"></canvas>
+              
+              <!-- Top 3D Status Overlay -->
+              <div class="hero-3d-top-overlay">
+                <div class="hero-3d-channel-tag">
+                  <span class="live-beacon"></span>
+                  <span>STUDIO ON-AIR</span>
+                </div>
+                <div class="hero-3d-freq-badge">
+                  <i class="fas fa-signal"></i> 104.5 FM &amp; DIGITAL HD
+                </div>
+              </div>
+
+              <!-- Bottom 3D Interactive Controls Overlay -->
+              <div class="hero-3d-bottom-overlay">
+                <div class="hero-3d-info-card">
+                  <div class="hero-3d-info-text">
+                    <h4><i class="fas fa-microphone-lines" style="color: #34d399; margin-right: 6px;"></i> 3D Health Media Core</h4>
+                    <p>Drag or hover to rotate broadcast frequency rings &amp; pulse wave</p>
+                  </div>
+                  <div class="hero-3d-controls">
+                    <button class="btn-3d-control" id="btnRotate3D" title="Toggle Auto-Rotation" aria-label="Toggle Auto-Rotation"><i class="fas fa-sync-alt"></i></button>
+                    <button class="btn-3d-control" id="btnPulse3D" title="Pulse Health Frequency" aria-label="Pulse Health Frequency"><i class="fas fa-heartbeat"></i></button>
+                    <button class="btn-3d-control" id="btnReset3D" title="Reset View" aria-label="Reset View"><i class="fas fa-compress-arrows-alt"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST METRICS & IMPACT BAR -->
+    <div class="container">
+      <div class="trust-metrics-bar" id="impactMetrics">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number-wrapper">
+              <span class="counter-value" data-target="50">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="metric-label">Broadcast Episodes</div>
+            <div class="metric-subtext">Weekly Health Hour programmes</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-wrapper">
+              <span class="counter-value" data-target="12000">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="metric-label">Community Reached</div>
+            <div class="metric-subtext">Across Watford, Brent & UK online</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-wrapper">
+              <span class="counter-value" data-target="15">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="metric-label">NHS & Charity Partners</div>
+            <div class="metric-subtext">Trusts, health boards & networks</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-wrapper">
+              <span class="counter-value" data-target="25">0</span><span class="counter-suffix">+</span>
+            </div>
+            <div class="metric-label">Legacy Films & Stories</div>
+            <div class="metric-subtext">Echoes of Us elder histories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- YOUTUBE & FEATURED VIDEOS SECTION (Client Explicit Core Request) -->
+    <section class="section" id="featuredVideos" style="padding-top: 5rem;">
+      <div class="container">
+        
+        <!-- Official YouTube Channel Spotlight Banner -->
+        <div class="youtube-spotlight-card">
+          <div class="youtube-spotlight-grid">
+            <div>
+              <div class="youtube-channel-header">
+                <div class="youtube-avatar">
+                  <i class="fab fa-youtube"></i>
+                </div>
+                <div class="youtube-channel-info">
+                  <h3>Global Villaje Media on YouTube</h3>
+                  <p>Official Video Hub • @GlobalVillajeMedia</p>
+                </div>
+              </div>
+              <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                Watch our latest documentaries, community health dialogues, mental wellness cooking experiences, and stroke recovery stories. We bring vital clinical knowledge into real community homes.
+              </p>
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube">
+                  <i class="fab fa-youtube"></i> <span>Subscribe @GlobalVillajeMedia</span>
+                </a>
+                <a href="watch-and-listen.html" class="btn btn-outline-white">
+                  <span>Explore Full Video Archive</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.06); border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid rgba(255,255,255,0.12);">
+              <h4 style="color: #ffffff; margin-bottom: 0.75rem; font-size: 1.15rem;"><i class="fas fa-video text-red-500"></i> Video Content Series</h4>
+              <ul style="list-style: none; padding: 0; margin: 0; color: #cbd5e1; font-size: 0.92rem; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li><i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.5rem;"></i> Stroke Recovery, Survivor Voice & Rehabilitation</li>
+                <li><i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.5rem;"></i> Spiced in Watford: Food & Mental Health Dialogues</li>
+                <li><i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.5rem;"></i> When Stress Affects Your Physical Health</li>
+                <li><i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.5rem;"></i> Person-Centered Care in Black Communities</li>
+                <li><i class="fas fa-check-circle" style="color: #10b981; margin-right: 0.5rem;"></i> Echoes of Us: Elder Legacy Films</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="badge badge-youtube"><i class="fab fa-youtube"></i> Featured Community Videos</span>
+          <h2 class="section-title">Authentic Stories, Real Conversations, Life-Saving Health Insights</h2>
+          <p class="section-lead">
+            Explore our curated YouTube video releases below. Click to watch preview discussions or open the full episodes directly on our official YouTube channel.
+          </p>
+        </div>
+
+        <!-- YouTube Live Feed Sync Bar -->
+        <div class="youtube-live-sync-bar">
+          <div class="sync-status-indicator" id="youtubeSyncStatus">
+            <span class="sync-dot"></span>
+            <span>Live YouTube Channel Feed • <strong>@GlobalVillajeMedia</strong></span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: #64748b;">
+            <span>Last synced: <strong id="youtubeSyncTime" style="color: #0f172a;">Live</strong></span>
+            <button class="sync-refresh-btn" id="syncYoutubeBtn" title="Sync live YouTube feed">
+              <i class="fas fa-sync-alt"></i> Refresh Feed
+            </button>
+          </div>
+        </div>
+
+        <!-- Video Repository Grid with Title, Description, Duration and Direct Links -->
+        <div class="video-grid">
+          
+          <!-- Video 1: Stroke Recovery -->
+          <div class="video-card">
+            <div class="video-card-thumbnail" data-video-trigger 
+                 data-video-title="Stroke Recovery, Survivor Voice & Support" 
+                 data-video-desc="An inspiring exploration of stroke rehabilitation, patient recovery journeys, and the vital role of family and community support in Black healthcare."
+                 data-video-guest="Stroke Survivors & Neurological Rehab Advocates"
+                 data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=700&q=80" alt="Stroke Recovery, Survivor Voice and Support">
+              <div class="video-play-btn-overlay"><i class="fas fa-play"></i></div>
+              <span class="video-duration-pill"><i class="far fa-clock"></i> 34 mins</span>
+            </div>
+            <div class="video-card-body">
+              <span class="video-category-tag">Recovery & Rehabilitation</span>
+              <h3 class="video-card-title">Stroke Recovery, Survivor Voice & Support</h3>
+              <p class="video-card-desc">
+                Hearing directly from Black stroke survivors on navigating early warning signs, emergency care, long-term rehabilitation, and the emotional support systems necessary for dignity and healing.
+              </p>
+              <div class="video-card-footer">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="video-direct-link">
+                  <i class="fab fa-youtube"></i> Watch on YouTube
+                </a>
+                <button class="btn btn-secondary btn-sm" data-video-trigger 
+                        data-video-title="Stroke Recovery, Survivor Voice & Support" 
+                        data-video-desc="An inspiring exploration of stroke rehabilitation, patient recovery journeys, and the vital role of family and community support in Black healthcare."
+                        data-video-guest="Stroke Survivors & Neurological Rehab Advocates"
+                        data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+                  Quick Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2: When Stress Affects Your Physical Health -->
+          <div class="video-card">
+            <div class="video-card-thumbnail" data-video-trigger 
+                 data-video-title="When Stress Affects Your Physical Health (feat. Mervelee Myers)" 
+                 data-video-desc="Featuring community activist Mervelee Myers, exploring how chronic psychological and social stress manifests in physical illnesses, hypertension, and fatigue."
+                 data-video-guest="Mervelee Myers & Mental Health Champions"
+                 data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="When Stress Affects Your Physical Health">
+              <div class="video-play-btn-overlay"><i class="fas fa-play"></i></div>
+              <span class="video-duration-pill"><i class="far fa-clock"></i> 28 mins</span>
+            </div>
+            <div class="video-card-body">
+              <span class="video-category-tag">Mental Health & Well-being</span>
+              <h3 class="video-card-title">When Stress Affects Your Physical Health</h3>
+              <p class="video-card-desc">
+                A frank, transformative dialogue with Mervelee Myers examining the biological cost of chronic stress, somatic symptoms, nervous system regulation, and community-grounded healing practices.
+              </p>
+              <div class="video-card-footer">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="video-direct-link">
+                  <i class="fab fa-youtube"></i> Watch on YouTube
+                </a>
+                <button class="btn btn-secondary btn-sm" data-video-trigger 
+                        data-video-title="When Stress Affects Your Physical Health (feat. Mervelee Myers)" 
+                        data-video-desc="Featuring community activist Mervelee Myers, exploring how chronic psychological and social stress manifests in physical illnesses, hypertension, and fatigue."
+                        data-video-guest="Mervelee Myers & Mental Health Champions"
+                        data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+                  Quick Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 3: Spiced in Watford -->
+          <div class="video-card">
+            <div class="video-card-thumbnail" data-video-trigger 
+                 data-video-title="Spiced in Watford: A Cooking Experience & Mental Health Dialogue" 
+                 data-video-desc="A community cooking initiative produced by GVM with Eva Mbiru, bringing people together over African & Caribbean culinary heritage to open vital mental health conversations."
+                 data-video-guest="Eva Mbiru & Watford Community Network"
+                 data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=700&q=80" alt="Spiced in Watford cooking experience">
+              <div class="video-play-btn-overlay"><i class="fas fa-play"></i></div>
+              <span class="video-duration-pill"><i class="far fa-clock"></i> 42 mins</span>
+            </div>
+            <div class="video-card-body">
+              <span class="video-category-tag">Culinary & Mental Health</span>
+              <h3 class="video-card-title">Spiced in Watford: A Cooking Experience</h3>
+              <p class="video-card-desc">
+                Discover how traditional recipes, aromas, and kitchen fellowship create a relaxed, culturally safe haven for participants in Watford to discuss emotional wellness and overcome stigma.
+              </p>
+              <div class="video-card-footer">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="video-direct-link">
+                  <i class="fab fa-youtube"></i> Watch on YouTube
+                </a>
+                <button class="btn btn-secondary btn-sm" data-video-trigger 
+                        data-video-title="Spiced in Watford: A Cooking Experience & Mental Health Dialogue" 
+                        data-video-desc="A community cooking initiative produced by GVM with Eva Mbiru, bringing people together over African & Caribbean culinary heritage to open vital mental health conversations."
+                        data-video-guest="Eva Mbiru & Watford Community Network"
+                        data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+                  Quick Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 4: Person-Centered Care -->
+          <div class="video-card">
+            <div class="video-card-thumbnail" data-video-trigger 
+                 data-video-title="Person-Centered Care & Mental Health Services in the Black Community" 
+                 data-video-desc="Examining the intersection of cultural competence, healthcare equity, and compassionate mental health support for Black African and Caribbean individuals."
+                 data-video-guest="NHS Mental Health Clinicians & Advocates"
+                 data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=700&q=80" alt="Person-Centered Care and Mental Health">
+              <div class="video-play-btn-overlay"><i class="fas fa-play"></i></div>
+              <span class="video-duration-pill"><i class="far fa-clock"></i> 50 mins</span>
+            </div>
+            <div class="video-card-body">
+              <span class="video-category-tag">Healthcare Equity</span>
+              <h3 class="video-card-title">Person-Centered Care & Mental Health</h3>
+              <p class="video-card-desc">
+                How health trusts and psychiatric practitioners can move beyond clinical tick-boxes to deliver truly person-centered, culturally respectful mental health care that respects lived reality.
+              </p>
+              <div class="video-card-footer">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="video-direct-link">
+                  <i class="fab fa-youtube"></i> Watch on YouTube
+                </a>
+                <button class="btn btn-secondary btn-sm" data-video-trigger 
+                        data-video-title="Person-Centered Care & Mental Health Services in the Black Community" 
+                        data-video-desc="Examining the intersection of cultural competence, healthcare equity, and compassionate mental health support for Black African and Caribbean individuals."
+                        data-video-guest="NHS Mental Health Clinicians & Advocates"
+                        data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+                  Quick Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 5: Echoes of Us -->
+          <div class="video-card">
+            <div class="video-card-thumbnail" data-video-trigger 
+                 data-video-title="Echoes of Us: Therapeutic Legacy Films & Elder Memories" 
+                 data-video-desc="Preserving the rich living histories, migration journeys, culture, and personal memories of elderly community members, supporting families navigating dementia."
+                 data-video-guest="Community Elders & Oral Historians"
+                 data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+              <img src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?auto=format&fit=crop&w=700&q=80" alt="Echoes of Us Storytelling and Legacy Films">
+              <div class="video-play-btn-overlay"><i class="fas fa-play"></i></div>
+              <span class="video-duration-pill"><i class="far fa-clock"></i> 38 mins</span>
+            </div>
+            <div class="video-card-body">
+              <span class="video-category-tag">Legacy & Elder Care</span>
+              <h3 class="video-card-title">Echoes of Us: Therapeutic Legacy Films</h3>
+              <p class="video-card-desc">
+                An intimate look into our signature storytelling initiative preserving elder voices, Windrush memories, family heritage, and emotional identity in the face of memory loss.
+              </p>
+              <div class="video-card-footer">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="video-direct-link">
+                  <i class="fab fa-youtube"></i> Watch on YouTube
+                </a>
+                <button class="btn btn-secondary btn-sm" data-video-trigger 
+                        data-video-title="Echoes of Us: Therapeutic Legacy Films & Elder Memories" 
+                        data-video-desc="Preserving the rich living histories, migration journeys, culture, and personal memories of elderly community members, supporting families navigating dementia."
+                        data-video-guest="Community Elders & Oral Historians"
+                        data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+                  Quick Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 6: Health Hour Broadcast -->
+          <div class="video-card">
+            <div class="video-card-thumbnail" data-video-trigger 
+                 data-video-title="The Health, Wellness & Wellbeing Hour Live Broadcast" 
+                 data-video-desc="Highlights from the weekly radio broadcast bridging clinical knowledge and grassroots community experience, hosted by Charles Ogunnowo Olorunfemi."
+                 data-video-guest="Hosted by Charles Ogunnowo Olorunfemi"
+                 data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+              <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=700&q=80" alt="The Health, Wellness & Wellbeing Hour Broadcast">
+              <div class="video-play-btn-overlay"><i class="fas fa-play"></i></div>
+              <span class="video-duration-pill"><i class="far fa-clock"></i> 58 mins</span>
+            </div>
+            <div class="video-card-body">
+              <span class="video-category-tag">Radio Broadcast & Health</span>
+              <h3 class="video-card-title">The Health, Wellness & Wellbeing Hour</h3>
+              <p class="video-card-desc">
+                Broadcast weekly on Chalkhill Community Radio, bringing medical consultants, midwives, and community advocates together for accessible, trustworthy discussions.
+              </p>
+              <div class="video-card-footer">
+                <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="video-direct-link">
+                  <i class="fab fa-youtube"></i> Watch on YouTube
+                </a>
+                <button class="btn btn-secondary btn-sm" data-video-trigger 
+                        data-video-title="The Health, Wellness & Wellbeing Hour Live Broadcast" 
+                        data-video-desc="Highlights from the weekly radio broadcast bridging clinical knowledge and grassroots community experience, hosted by Charles Ogunnowo Olorunfemi."
+                        data-video-guest="Hosted by Charles Ogunnowo Olorunfemi"
+                        data-video-link="https://www.youtube.com/@GlobalVillajeMedia">
+                  Quick Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="watch-and-listen.html" class="btn btn-primary btn-lg">
+            <span>View All Episodes & Podcasts in Watch & Listen Hub</span> <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE RADIO PLAYER SECTION (Warm Community Radio Simulation) -->
+    <section class="section section-warm">
+      <div class="container">
+        <div class="radio-live-card">
+          <div class="radio-player-grid">
+            
+            <div class="radio-visual-disk" id="radioVisualDisk">
+              <i class="fas fa-podcast" style="font-size: 2.2rem; color: #ffffff;"></i>
+            </div>
+
+            <div class="radio-meta">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+                <span class="live-badge-pulse"><span class="pulse-dot"></span> BROADCASTING</span>
+                <span style="color: #a7f3d0; font-size: 0.85rem; font-weight: 600;">Chalkhill Community Radio 24/7 Digital Feed</span>
+              </div>
+              <h3>The Health, Wellness & Wellbeing Hour</h3>
+              <p id="radioStatusText">Weekly Broadcast Hosted by Charles Ogunnowo Olorunfemi</p>
+              
+              <div class="live-audio-waves">
+                <div class="audio-bar paused"></div>
+                <div class="audio-bar paused"></div>
+                <div class="audio-bar paused"></div>
+                <div class="audio-bar paused"></div>
+                <div class="audio-bar paused"></div>
+              </div>
+            </div>
+
+            <div class="radio-controls-group">
+              <button class="play-toggle-btn" id="radioPlayBtn" aria-label="Toggle Live Audio Stream">
+                <i class="fas fa-play"></i>
+              </button>
+              <div style="text-align: left;">
+                <div style="font-size: 0.75rem; text-transform: uppercase; color: #a7f3d0; letter-spacing: 0.08em;">Format</div>
+                <div style="font-weight: 800; font-size: 1rem;">Community Radio</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMMES & SERVICES SECTION (From globalvillajemedia.org) -->
+    <section class="section" id="programmes">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="badge badge-primary"><i class="fas fa-hands-helping"></i> Core NGO Initiatives</span>
+          <h2 class="section-title">Our Flagship Programmes</h2>
+          <p class="section-lead">
+            Every programme is co-designed with community members and healthcare professionals to dismantle health inequalities and restore trust in care pathways.
+          </p>
+        </div>
+
+        <div class="programmes-grid">
+          
+          <!-- Programme 1 -->
+          <div class="programme-card">
+            <div class="programme-card-image">
+              <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=700&q=80" alt="The Health, Wellness and Wellbeing Hour Radio">
+              <span class="badge badge-accent programme-card-tag"><i class="fas fa-broadcast-tower"></i> Weekly Broadcast</span>
+            </div>
+            <div class="programme-card-body">
+              <h3 class="programme-card-title">The Health, Wellness & Wellbeing Hour</h3>
+              <p class="programme-card-desc">
+                Our weekly flagship broadcast on Chalkhill Community Radio, reaching audiences across Brent, Watford, London and worldwide with expert clinical interviews, listener phone-ins, and health literacy guides.
+              </p>
+              <div class="programme-card-footer">
+                <a href="health-wellness-wellbeing-hour.html" class="btn btn-secondary btn-sm w-full" style="width: 100%;">
+                  <span>Explore The Radio Show</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programme 2 -->
+          <div class="programme-card">
+            <div class="programme-card-image">
+              <img src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?auto=format&fit=crop&w=700&q=80" alt="Echoes of Us Legacy Films">
+              <span class="badge badge-primary programme-card-tag"><i class="fas fa-film"></i> Legacy Storytelling</span>
+            </div>
+            <div class="programme-card-body">
+              <h3 class="programme-card-title">Echoes of Us</h3>
+              <p class="programme-card-desc">
+                A therapeutic storytelling and legacy film programme designed to help older adults and families record, preserve, and celebrate memory, identity, and migration histories, especially where memory loss or cognitive decline is present.
+              </p>
+              <div class="programme-card-footer">
+                <a href="echoes-of-us.html" class="btn btn-secondary btn-sm w-full" style="width: 100%;">
+                  <span>Explore Echoes of Us</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programme 3 -->
+          <div class="programme-card">
+            <div class="programme-card-image">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=700&q=80" alt="Caring with Confidence Unpaid Carers">
+              <span class="badge badge-coral programme-card-tag"><i class="fas fa-heart"></i> Carer Empowerment</span>
+            </div>
+            <div class="programme-card-body">
+              <h3 class="programme-card-title">Caring with Confidence™</h3>
+              <p class="programme-card-desc">
+                Targeted health literacy, rights navigation, and emotional resilience workshops for unpaid family and friend carers from Black African and Caribbean backgrounds supporting loved ones with chronic conditions.
+              </p>
+              <div class="programme-card-footer">
+                <a href="caring-with-confidence.html" class="btn btn-secondary btn-sm w-full" style="width: 100%;">
+                  <span>Explore Carers Programme</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programme 4 -->
+          <div class="programme-card">
+            <div class="programme-card-image">
+              <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=700&q=80" alt="Campaign in a Box Multimedia">
+              <span class="badge badge-accent programme-card-tag"><i class="fas fa-box-open"></i> Full Toolkit</span>
+            </div>
+            <div class="programme-card-body">
+              <h3 class="programme-card-title">Campaign in a Box</h3>
+              <p class="programme-card-desc">
+                An end-to-end multimedia awareness package for NHS trusts, councils and charities. Includes audio radio spots, video shorts, cultural fact sheets, translated guides, and community ambassador toolkits.
+              </p>
+              <div class="programme-card-footer">
+                <a href="campaign-in-a-box.html" class="btn btn-secondary btn-sm w-full" style="width: 100%;">
+                  <span>Explore Campaign in a Box</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programme 5 -->
+          <div class="programme-card">
+            <div class="programme-card-image">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Black Health Awareness Campaigns">
+              <span class="badge badge-primary programme-card-tag"><i class="fas fa-stethoscope"></i> High Disparity</span>
+            </div>
+            <div class="programme-card-body">
+              <h3 class="programme-card-title">Black Health Awareness Campaigns</h3>
+              <p class="programme-card-desc">
+                Dedicated awareness drives addressing conditions with stark racial disparities: Prostate cancer (1 in 4 Black men), Sickle Cell & Ro blood donation, maternal mortality, hypertension, and kidney health.
+              </p>
+              <div class="programme-card-footer">
+                <a href="black-health-awareness-campaigns.html" class="btn btn-secondary btn-sm w-full" style="width: 100%;">
+                  <span>Explore Health Campaigns</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programme 6 -->
+          <div class="programme-card">
+            <div class="programme-card-image">
+              <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=700&q=80" alt="Documentary and Long-form films">
+              <span class="badge badge-dark programme-card-tag"><i class="fas fa-video"></i> Cinematic Films</span>
+            </div>
+            <div class="programme-card-body">
+              <h3 class="programme-card-title">Documentary & Long-Form Storytelling</h3>
+              <p class="programme-card-desc">
+                Producing short and feature-length documentaries that capture lived healthcare journeys, cultural nuance, and community triumphs with cinematic honesty, empathy, and broadcast quality.
+              </p>
+              <div class="programme-card-footer">
+                <a href="documentary-storytelling.html" class="btn btn-secondary btn-sm w-full" style="width: 100%;">
+                  <span>Explore Documentaries</span> <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOUNDER & LEADERSHIP SPOTLIGHT (Charles Ogunnowo Olorunfemi) -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="founder-card">
+          <div class="founder-grid">
+            <div class="founder-photo-wrapper">
+              <div class="founder-photo">
+                <img src="assets/founder-charles-studio.svg" alt="Charles Ogunnowo Olorunfemi, Founder and General Manager of Global Villaje Media broadcasting in studio" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div>
+              <span class="badge badge-accent mb-3"><i class="fas fa-user-tie"></i> Founder's Vision & Mission</span>
+              <h2 style="color: #ffffff; font-size: 2.1rem; margin-bottom: 1rem;">
+                "When Health Information Speaks Your Cultural Language, It Saves Lives."
+              </h2>
+              <p style="color: #ecfdf5; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">
+                <strong>Charles Ogunnowo Olorunfemi</strong> founded Global Villaje Media to resolve a persistent, tragic reality: clinical advice in the UK was often delivered in clinical jargon that alienated Black African and Caribbean communities, fueling distrust and delayed diagnoses.
+              </p>
+              <p style="color: #cbd5e1; font-size: 0.98rem; line-height: 1.65;">
+                By combining community radio broadcasting, grassroots film production, culinary sessions, and honest peer conversations, Global Villaje Media creates safe spaces where people listen, learn, and take control of their health.
+              </p>
+              
+              <div class="founder-quote-card">
+                <div class="founder-quote-text">
+                  "Our mission is simple: to make health literacy culturally accessible, dignifying, and engaging for every family in the global village."
+                </div>
+                <div class="founder-author">Charles Ogunnowo Olorunfemi &bull; Founder & Lead Health Communication Strategist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY VOICES & TESTIMONIALS (Dual Infinite Marquee with Opposite Moving Lines) -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary"><i class="fas fa-quote-left"></i> Community Trust &amp; Impact</span>
+          <h2 class="section-title">What Our Community &amp; Partners Say</h2>
+          <p class="section-lead">
+            Real feedback from NHS clinicians, local authorities, carers, Windrush elders, and community champions touched by Global Villaje Media.
+          </p>
+        </div>
+      </div>
+
+      <div class="marquee-container">
+        <!-- TOP TRACK: Moving Left to Right (LTR) -->
+        <div class="marquee-track-wrapper" aria-label="Testimonials moving from left to right">
+          <div class="marquee-track track-ltr">
+            
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Global Villaje Media has transformed how our NHS Trust engages with Black communities. Their radio show and video discussions make complex clinical subjects feel natural and trustworthy."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Dr. Adebayo O.</div>
+                <div class="testimonial-client-subtext">Consultant Haematologist, NHS Partner</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "The 'Echoes of Us' legacy film created for my mother with early dementia brought our whole family together. It preserved her stories in her own voice forever."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Marcia T.</div>
+                <div class="testimonial-client-subtext">Family Carer, Brent Community</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Spiced in Watford made talking about mental health so comfortable. Cooking together while sharing our real struggles broke through years of silence."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Eva Mbiru</div>
+                <div class="testimonial-client-subtext">Community Partner &amp; Culinary Host</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Their prostate cancer awareness campaign led to a measurable increase in PSA testing among Black men in our borough. True grassroots impact."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Public Health Lead</div>
+                <div class="testimonial-client-subtext">North West London Health Authority</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Charles and the GVM team create a safe atmosphere where elders open up with pride and emotion. The radio broadcasts reach people who never read leaflets."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Pastor Samuel K.</div>
+                <div class="testimonial-client-subtext">Faith Community Leader, Watford</div>
+              </div>
+            </div>
+
+            <!-- Duplicate Set for Seamless Loop (LTR) -->
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Global Villaje Media has transformed how our NHS Trust engages with Black communities. Their radio show and video discussions make complex clinical subjects feel natural and trustworthy."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Dr. Adebayo O.</div>
+                <div class="testimonial-client-subtext">Consultant Haematologist, NHS Partner</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "The 'Echoes of Us' legacy film created for my mother with early dementia brought our whole family together. It preserved her stories in her own voice forever."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Marcia T.</div>
+                <div class="testimonial-client-subtext">Family Carer, Brent Community</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Spiced in Watford made talking about mental health so comfortable. Cooking together while sharing our real struggles broke through years of silence."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Eva Mbiru</div>
+                <div class="testimonial-client-subtext">Community Partner &amp; Culinary Host</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Their prostate cancer awareness campaign led to a measurable increase in PSA testing among Black men in our borough. True grassroots impact."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Public Health Lead</div>
+                <div class="testimonial-client-subtext">North West London Health Authority</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Charles and the GVM team create a safe atmosphere where elders open up with pride and emotion. The radio broadcasts reach people who never read leaflets."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Pastor Samuel K.</div>
+                <div class="testimonial-client-subtext">Faith Community Leader, Watford</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BOTTOM TRACK: Moving Right to Left (RTL) - OPPOSITE DIRECTION -->
+        <div class="marquee-track-wrapper" aria-label="Testimonials moving from right to left">
+          <div class="marquee-track track-rtl">
+            
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Hearing fellow Windrush generation elders share their health and life stories on GVM radio gave me the courage to finally visit my GP for a health check."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Desmond B.</div>
+                <div class="testimonial-client-subtext">Windrush Elder &amp; Radio Listener, Brent</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Caring with Confidence™ provided practical toolkits for our unpaid family carers. The culturally sensitive approach made carers feel seen, valued, and equipped."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Brenda Nwosu</div>
+                <div class="testimonial-client-subtext">Dementia Specialist &amp; Carers Network Lead</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "As a stroke survivor, participating in their broadcast gave me a voice to educate my community on early warning signs like FAST in our own cultural terms."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Marcus Sterling</div>
+                <div class="testimonial-client-subtext">Health Advocate &amp; Broadcast Guest</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "The health video series on hypertension broke through medical skepticism. Patients now come into our clinic referencing the episodes they watched on YouTube!"
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Community Nurse Clara D.</div>
+                <div class="testimonial-client-subtext">Watford Primary Healthcare Outreach</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "A truly vital social enterprise bridging NHS clinical expertise with genuine grassroots community connection. Highly recommend commissioning them."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Dr. Folake A.</div>
+                <div class="testimonial-client-subtext">Cardiologist &amp; Health Literacy Contributor</div>
+              </div>
+            </div>
+
+            <!-- Duplicate Set for Seamless Loop (RTL) -->
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Hearing fellow Windrush generation elders share their health and life stories on GVM radio gave me the courage to finally visit my GP for a health check."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Desmond B.</div>
+                <div class="testimonial-client-subtext">Windrush Elder &amp; Radio Listener, Brent</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "Caring with Confidence™ provided practical toolkits for our unpaid family carers. The culturally sensitive approach made carers feel seen, valued, and equipped."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Brenda Nwosu</div>
+                <div class="testimonial-client-subtext">Dementia Specialist &amp; Carers Network Lead</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "As a stroke survivor, participating in their broadcast gave me a voice to educate my community on early warning signs like FAST in our own cultural terms."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Marcus Sterling</div>
+                <div class="testimonial-client-subtext">Health Advocate &amp; Broadcast Guest</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "The health video series on hypertension broke through medical skepticism. Patients now come into our clinic referencing the episodes they watched on YouTube!"
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Community Nurse Clara D.</div>
+                <div class="testimonial-client-subtext">Watford Primary Healthcare Outreach</div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-top-row">
+                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <i class="fas fa-quote-right quote-icon"></i>
+              </div>
+              <p class="testimonial-text">
+                "A truly vital social enterprise bridging NHS clinical expertise with genuine grassroots community connection. Highly recommend commissioning them."
+              </p>
+              <div class="testimonial-meta">
+                <div class="testimonial-client-name">Dr. Folake A.</div>
+                <div class="testimonial-client-subtext">Cardiologist &amp; Health Literacy Contributor</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMISSIONING & ENQUIRY LEAD FORM (Interactive) -->
+    <section class="section" id="commission">
+      <div class="container">
+        <div class="hero-grid" style="align-items: flex-start;">
+          
+          <div>
+            <span class="badge badge-accent mb-3"><i class="fas fa-envelope-open-text"></i> Partner With GVM</span>
+            <h2 style="font-size: 2.35rem; margin-bottom: 1.25rem;">
+              Commission a Campaign, Film or Community Radio Series
+            </h2>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: #475569; margin-bottom: 1.5rem;">
+              Whether you are an NHS Integrated Care Board, public health team, voluntary organisation, or care home, Global Villaje Media can produce culturally responsive media that moves the needle on health outcomes.
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+              <div style="display: flex; gap: 1rem; align-items: center;">
+                <div style="width: 42px; height: 42px; border-radius: 10px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.82rem; color: #64748b; font-weight: 700; text-transform: uppercase;">Direct Phone Line</div>
+                  <div style="font-weight: 800; font-size: 1.05rem; color: #0f172a;">07915 697589</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center;">
+                <div style="width: 42px; height: 42px; border-radius: 10px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.82rem; color: #64748b; font-weight: 700; text-transform: uppercase;">Direct Email</div>
+                  <div style="font-weight: 800; font-size: 1.05rem; color: #0f172a;">charlesolorunfemi@globalvillajemedia.org</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center;">
+                <div style="width: 42px; height: 42px; border-radius: 10px; background: #fef2f2; color: #dc2626; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                  <i class="fab fa-youtube"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.82rem; color: #64748b; font-weight: 700; text-transform: uppercase;">YouTube Channel</div>
+                  <div style="font-weight: 800; font-size: 1.05rem; color: #0f172a;">@GlobalVillajeMedia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lead-form-card">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.45rem;">Submit a Commissioning Enquiry</h3>
+            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem;">Fill in your details below and our production team will get in touch within 24 hours.</p>
+
+            <form id="leadEnquiryForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="leadName">Full Name *</label>
+                  <input type="text" id="leadName" class="form-input" placeholder="e.g. Dr. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="leadOrg">Organisation / Trust *</label>
+                  <input type="text" id="leadOrg" class="form-input" placeholder="e.g. NHS Foundation Trust" required>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="leadEmail">Email Address *</label>
+                  <input type="email" id="leadEmail" class="form-input" placeholder="name@organisation.nhs.uk" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="leadPhone">Phone Number</label>
+                  <input type="tel" id="leadPhone" class="form-input" placeholder="07123 456789">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="leadService">Interested Programme / Service *</label>
+                <select id="leadService" class="form-select" required>
+                  <option value="" disabled selected>Select a programme or service</option>
+                  <option value="radio-hour">The Health, Wellness & Wellbeing Hour (Sponsorship / Guest)</option>
+                  <option value="echoes-of-us">Echoes of Us (Legacy Storytelling & Dementia Film)</option>
+                  <option value="carers">Caring with Confidence™ (Carers Literacy Workshops)</option>
+                  <option value="campaign-box">Campaign in a Box (Full Awareness Multimedia Package)</option>
+                  <option value="black-health">Black Health Awareness Campaign (Prostate, Sickle Cell, Maternal)</option>
+                  <option value="documentary">Documentary & Video Storytelling</option>
+                  <option value="other">General Community Partnership</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="leadMessage">Project Overview / Goals *</label>
+                <textarea id="leadMessage" class="form-textarea" placeholder="Tell us about your target community, key health outcomes, timeline, and requirements..." required></textarea>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="leadConsent" required>
+                <label class="checkbox-label" for="leadConsent">I agree to Global Villaje Media processing my enquiry to provide a formal proposal.</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-full" style="width: 100%;">
+                <span>Submit Commissioning Request</span> <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary"><i class="fas fa-question-circle"></i> Frequently Asked Questions</span>
+          <h2 class="section-title">Everything You Need to Know About GVM</h2>
+          <p class="section-lead">Find clear answers regarding our media productions, NHS partnerships, and community engagement models.</p>
+        </div>
+
+        <div class="faq-accordion-container">
+          
+          <div class="faq-item active">
+            <button class="faq-trigger">
+              <span>What makes Global Villaje Media culturally responsive?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-body">
+              We do not simply translate brochures into different languages. We work from within Black African and Caribbean cultural frameworks—using authentic oral traditions, food, trusted music, faith perspectives, and lived experiences to make clinical health messages deeply relevant and trusted.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>How can NHS trusts and local authorities commission GVM?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-body">
+              NHS organisations can commission us through direct service agreements, community engagement grants, or campaign production contracts. We deliver full end-to-end deliverables including audio spots, video documentaries, evaluation reports, and community reach metrics.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Where can I watch all your latest YouTube videos?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-body">
+              All of our videos, podcasts, and community interviews are hosted on our official YouTube channel at <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" style="font-weight: 700; color: #ff0000;"><i class="fab fa-youtube"></i> youtube.com/@GlobalVillajeMedia</a> as well as in our on-site <a href="watch-and-listen.html" style="font-weight: 700;">Watch & Listen Video Hub</a>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>What is the 'Echoes of Us' programme?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-body">
+              'Echoes of Us' is our therapeutic legacy film and storytelling initiative for older adults, particularly those facing dementia or cognitive decline. We record their memories, migration histories, and family wisdom into broadcast-quality cinematic keepsakes for their families and communities.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>How can community champions participate in the radio show?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-body">
+              We welcome healthcare professionals, carers, patient advocates, and charity leaders to feature on The Health, Wellness & Wellbeing Hour. You can suggest a guest or topic through our <a href="work-with-us.html" style="font-weight: 700;">Work With Us page</a>.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- VIDEO MODAL POPUP -->
+  <div class="form-modal-backdrop" id="videoModalBackdrop">
+    <div class="form-modal-card video-modal-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 id="videoModalTitle" style="margin: 0; color: #ffffff; font-size: 1.35rem;">Community Health Video</h3>
+        <button id="videoModalClose" style="background: none; border: none; font-size: 1.5rem; color: #cbd5e1; cursor: pointer;"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="videoModalGuest" style="color: #34d399; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 600;"></div>
+      
+      <div id="videoModalFrame" style="position: relative; aspect-ratio: 16/9; background: #000; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem;">
+        <!-- Injected via JavaScript -->
+      </div>
+      
+      <p id="videoModalDesc" style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem;"></p>
+      
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <a id="videoModalLink" href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube">
+          <i class="fab fa-youtube"></i> Watch on YouTube Channel
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENQUIRY CONFIRMATION MODAL -->
+  <div class="form-modal-backdrop" id="confirmationModal">
+    <div class="form-modal-card text-center" style="text-align: center;">
+      <div class="modal-icon-wrap">
+        <i class="fas fa-check"></i>
+      </div>
+      <h3 style="margin-bottom: 0.5rem; color: #0f172a;">Enquiry Received!</h3>
+      <p style="color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 1.75rem;">
+        Thank you for reaching out to Global Villaje Media. Charles and our health communication production team have received your request and will review it promptly.
+      </p>
+      <button class="btn btn-primary" id="modalCloseBtn">Close Window</button>
+    </div>
+  </div>
+
+  <!-- FLOATING INTERACTIVE BROADCAST FREQUENCY WIDGET -->
+  <div class="floating-broadcast-widget" id="floatingRadioWidget" role="button" aria-label="Live GVM Broadcast Frequency">
+    <div class="floating-signal-icon">
+      <span class="signal-ping"></span>
+      <i class="fas fa-tower-broadcast"></i>
+    </div>
+    <div class="floating-signal-details">
+      <span class="floating-signal-title">GVM Radio 104.5 <span class="badge badge-accent" style="font-size: 0.60rem; padding: 0.1rem 0.35rem;">LIVE</span></span>
+      <span class="floating-signal-meta"><i class="fas fa-heartbeat"></i> Health Waves Active</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-bio">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Global Villaje Media Home">
+            <div class="brand-logo-emblem">
+              <svg class="brand-emblem-svg" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+                <path d="M 122 45 Q 128 30 135 18" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+                <path d="M 134 18 C 146 14 158 20 156 30 C 145 32 136 26 134 18 Z" fill="#78c932" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M 136 21 Q 146 24 152 26" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M 125 32 C 114 22 110 32 114 40 C 120 42 125 38 125 32 Z" fill="#78c932" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+                <circle cx="98" cy="85" r="48" fill="#60b5e8" stroke="#ffffff" stroke-width="5.5"/>
+                <path d="M 72 50 C 78 43 95 40 108 42 C 118 44 125 49 130 55 C 133 60 128 66 122 68 C 114 70 102 65 96 68 C 88 72 82 78 75 75 C 68 72 65 60 72 50 Z" fill="#78c932" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M 68 85 C 72 80 82 82 86 88 C 90 94 94 105 88 114 C 82 122 72 125 65 118 C 58 110 60 92 68 85 Z" fill="#78c932" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+                <ellipse cx="96" cy="115" rx="55" ry="14" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="5" transform="rotate(-6 96 115)"/>
+                <ellipse cx="94" cy="132" rx="42" ry="11" fill="none" stroke="#ffffff" stroke-width="5" transform="rotate(-4 94 132)"/>
+                <ellipse cx="92" cy="146" rx="28" ry="8" fill="none" stroke="#ffffff" stroke-width="5" transform="rotate(-2 92 146)"/>
+              </svg>
+            </div>
+            <div class="brand-logo-text-wrap">
+              <div class="brand-logo-title">
+                <span class="brand-logo-primary">GLOBAL VILLAJE</span>
+                <span class="brand-logo-badge">MEDIA</span>
+              </div>
+              <span class="brand-logo-tagline">COMMUNITY HEALTH &amp; STORYTELLING</span>
+            </div>
+          </a>
+          <p>
+            Global Villaje Media is a UK-based social-impact media enterprise and NGO using radio, video, documentaries, podcasts, and community storytelling to improve health literacy, dismantle health inequalities, and promote quality healthcare.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="social-icon-btn youtube" aria-label="YouTube Channel"><i class="fab fa-youtube"></i></a>
+            <a href="https://globalvillajemedia.org/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Original Website"><i class="fas fa-globe"></i></a>
+            <a href="mailto:charlesolorunfemi@globalvillajemedia.org" class="social-icon-btn" aria-label="Email Us"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us (Legacy Films)</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary &amp; Storytelling</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link active">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes &amp; Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch &amp; Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

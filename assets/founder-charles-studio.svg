@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%" aria-label="Charles Ogunnowo Olorunfemi, Founder &amp; General Manager of Global Villaje Media broadcasting in studio">
+  <defs>
+    <!-- Studio Lighting & Gradients -->
+    <linearGradient id="bgStudio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    
+    <linearGradient id="acousticWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+
+    <linearGradient id="acousticYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c4029"/>
+      <stop offset="60%" stop-color="#552f1b"/>
+      <stop offset="100%" stop-color="#3c1e0e"/>
+    </linearGradient>
+
+    <linearGradient id="skinHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8d5638"/>
+      <stop offset="100%" stop-color="#552f1b"/>
+    </linearGradient>
+
+    <linearGradient id="tshirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="metalHeadphone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <linearGradient id="micRedBand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <linearGradient id="foamShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="studioGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: Radio Sound Studio -->
+  <rect width="800" height="800" fill="url(#bgStudio)"/>
+
+  <!-- Window Blinds / Acoustic Slat Left -->
+  <g opacity="0.45">
+    <rect x="0" y="20" width="100" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="50" width="95" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="80" width="90" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="110" width="85" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="140" width="80" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="170" width="75" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="200" width="70" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="230" width="65" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="260" width="60" height="12" fill="#cbd5e1" rx="4"/>
+    <rect x="0" y="290" width="55" height="12" fill="#cbd5e1" rx="4"/>
+  </g>
+
+  <!-- Studio Soundproof Wall Panels (Blue & Charcoal) -->
+  <path d="M 60 0 L 450 0 L 420 480 L 60 480 Z" fill="#0f172a" opacity="0.95"/>
+  <path d="M 450 0 L 800 0 L 800 500 L 420 480 Z" fill="url(#acousticWall)"/>
+
+  <!-- Acoustic Wedge Foam Texture (Right Wall Corner - Yellow Acoustic Absorber) -->
+  <g transform="translate(680, 180) rotate(15)" opacity="0.85">
+    <polygon points="0,0 120,40 100,240 0,180" fill="url(#acousticYellow)"/>
+    <polygon points="20,10 110,45 95,90 10,60" fill="#fef08a" opacity="0.4"/>
+    <polygon points="10,70 95,100 85,150 5,120" fill="#d97706" opacity="0.5"/>
+    <polygon points="5,130 85,160 75,210 0,180" fill="#b45309" opacity="0.6"/>
+  </g>
+
+  <!-- Computer Screen / On-Air Audio Console Bottom Left -->
+  <g transform="translate(0, 560)">
+    <rect x="0" y="0" width="220" height="240" fill="#0f172a" stroke="#334155" stroke-width="4" rx="10"/>
+    <rect x="10" y="10" width="200" height="220" fill="#f8fafc" rx="6"/>
+    <!-- DAW / Broadcast Tracks UI -->
+    <rect x="10" y="10" width="200" height="24" fill="#0284c7"/>
+    <circle cx="24" cy="22" r="4" fill="#ffffff"/>
+    <circle cx="36" cy="22" r="4" fill="#ffffff" opacity="0.7"/>
+    <rect x="18" y="44" width="180" height="6" fill="#94a3b8" rx="2"/>
+    <rect x="18" y="58" width="160" height="6" fill="#38bdf8" rx="2"/>
+    <rect x="18" y="72" width="170" height="6" fill="#94a3b8" rx="2"/>
+    <rect x="18" y="86" width="150" height="6" fill="#22c55e" rx="2"/>
+    <rect x="18" y="100" width="180" height="6" fill="#94a3b8" rx="2"/>
+    <rect x="18" y="114" width="165" height="6" fill="#38bdf8" rx="2"/>
+    <rect x="18" y="128" width="175" height="6" fill="#f59e0b" rx="2"/>
+  </g>
+
+  <!-- Studio Ambient Warm Backlight -->
+  <circle cx="680" cy="300" r="160" fill="#38bdf8" opacity="0.12" filter="url(#studioGlow)"/>
+  <circle cx="500" cy="180" r="120" fill="#fbbf24" opacity="0.15" filter="url(#studioGlow)"/>
+
+  <!-- ================= FOUNDER CHARLES PORTRAIT ================= -->
+  <g id="founderFigure" filter="url(#softShadow)">
+    
+    <!-- White T-Shirt / Shoulders & Torso -->
+    <path d="M 220 800 
+             C 230 680, 270 590, 360 550 
+             C 420 520, 520 515, 600 550 
+             C 680 585, 740 660, 780 800 Z" 
+          fill="url(#tshirtGrad)"/>
+    
+    <!-- T-Shirt Collar & Creases -->
+    <path d="M 375 560 C 440 600, 540 595, 595 560 C 570 635, 410 635, 375 560 Z" fill="#e2e8f0"/>
+    <path d="M 440 610 C 470 680, 480 770, 475 800" stroke="#cbd5e1" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 520 615 C 550 670, 570 740, 580 800" stroke="#cbd5e1" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- Neck with realistic tone & shadow -->
+    <path d="M 410 430 L 410 575 C 460 590, 530 585, 575 570 L 575 435 Z" fill="url(#skinTone)"/>
+    <path d="M 410 500 C 450 560, 520 560, 575 510 L 575 570 C 530 585, 460 590, 410 575 Z" fill="#3c1e0e" opacity="0.45"/>
+
+    <!-- Head & Profile facing left-upwards toward microphone -->
+    <!-- Jawline & Head Structure -->
+    <path d="M 420 280 
+             C 400 300, 385 330, 380 370 
+             C 375 400, 380 430, 410 455 
+             C 440 480, 510 485, 555 465 
+             C 600 440, 625 395, 630 340 
+             C 635 280, 615 220, 550 200 
+             C 490 180, 440 230, 420 280 Z" 
+          fill="url(#skinTone)"/>
+
+    <!-- Forehead & Cheekbone Highlight (Studio Light Reflection) -->
+    <path d="M 440 220 C 400 270, 400 320, 425 345 C 450 360, 470 330, 470 290 C 470 250, 460 225, 440 220 Z" fill="url(#skinHighlight)" opacity="0.6"/>
+
+    <!-- Close-cropped Hair & Fade -->
+    <path d="M 440 215 C 490 185, 560 195, 610 230 C 625 242, 635 265, 635 295 C 620 285, 600 270, 575 260 C 530 240, 480 235, 440 215 Z" fill="#171717"/>
+    
+    <!-- Left Eye Looking Intently at Monitor / Guest -->
+    <ellipse cx="445" cy="305" rx="14" ry="9" fill="#f8fafc"/>
+    <ellipse cx="442" cy="305" rx="7" ry="7" fill="#261b14"/>
+    <circle cx="440" cy="303" r="2.5" fill="#ffffff"/>
+    <path d="M 430 296 C 440 290, 455 292, 465 298" stroke="#171717" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- Nose Profile -->
+    <path d="M 412 300 C 400 330, 395 345, 385 352 C 378 358, 382 368, 396 370 C 412 372, 425 365, 430 358" fill="url(#skinTone)" stroke="#3c1e0e" stroke-width="2"/>
+    <ellipse cx="400" cy="365" rx="5" ry="3.5" fill="#1c1917"/>
+
+    <!-- Lips & Speech Expression (Speaking into Mic) -->
+    <path d="M 390 395 C 400 392, 415 394, 425 398" stroke="#3c1e0e" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 392 402 C 402 410, 415 410, 424 402" stroke="#451a03" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Beard / Goatee Texture -->
+    <path d="M 385 385 
+             C 380 415, 390 445, 415 460 
+             C 440 472, 480 470, 510 455 
+             C 485 450, 440 445, 420 425 
+             C 400 405, 390 390, 385 385 Z" 
+          fill="#1c1917" opacity="0.65"/>
+    <!-- Subtle Stubble Highlights -->
+    <circle cx="410" cy="445" r="1.5" fill="#e2e8f0" opacity="0.5"/>
+    <circle cx="425" cy="452" r="1.5" fill="#e2e8f0" opacity="0.5"/>
+    <circle cx="440" cy="456" r="1.5" fill="#e2e8f0" opacity="0.5"/>
+    <circle cx="400" cy="435" r="1.5" fill="#e2e8f0" opacity="0.5"/>
+
+    <!-- Headphone Cable Running Down to Console -->
+    <path d="M 530 390 C 510 460, 480 580, 440 760" stroke="#0f172a" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- ================= BROADCAST HEADPHONES (Numark Professional) ================= -->
+    <!-- Headband Arc -->
+    <path d="M 470 205 C 510 160, 600 170, 640 240 L 625 250 C 590 190, 515 180, 480 220 Z" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <path d="M 485 195 C 520 165, 585 175, 620 230" stroke="#94a3b8" stroke-width="3" fill="none"/>
+
+    <!-- Headphone Ear Cup (Silver & Black Numark Style) -->
+    <g transform="translate(565, 275) rotate(18)">
+      <!-- Outer Black Cushion -->
+      <ellipse cx="0" cy="0" rx="42" ry="58" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+      <!-- Metallic Silver Housing -->
+      <ellipse cx="0" cy="0" rx="34" ry="48" fill="url(#metalHeadphone)" stroke="#475569" stroke-width="2"/>
+      <!-- Inner Branding Disc -->
+      <ellipse cx="0" cy="0" rx="26" ry="36" fill="#0f172a"/>
+      <!-- Numark Red Accent Badge -->
+      <rect x="-18" y="-4" width="36" height="8" fill="#e2e8f0" rx="3"/>
+      <text x="0" y="2" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="6.5" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="1">Numark</text>
+      <rect x="-12" y="6" width="24" height="3" fill="#ef4444" rx="1.5"/>
+      <!-- Pivot Bracket Connection -->
+      <path d="M 0 -48 L 0 -68 L -8 -72" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- ================= BROADCAST MICROPHONE & BOOM ARM ================= -->
+    <!-- Articulated Metal Boom Arm from Left -->
+    <g transform="translate(0, 360)">
+      <line x1="0" y1="30" x2="160" y2="20" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+      <circle cx="160" cy="20" r="14" fill="#1e293b" stroke="#64748b" stroke-width="3"/>
+      <circle cx="160" cy="20" r="6" fill="#94a3b8"/>
+      
+      <!-- Upper Arm Section -->
+      <line x1="160" y1="20" x2="260" y2="-60" stroke="#475569" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="260" cy="-60" r="12" fill="#1e293b" stroke="#64748b" stroke-width="3"/>
+
+      <!-- Shock Mount Swivel Joint -->
+      <line x1="260" y1="-60" x2="300" y2="-10" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+      
+      <!-- Studio Red Broadcast Tally / Indicator Collar -->
+      <rect x="280" y="-30" width="36" height="18" fill="url(#micRedBand)" rx="4" transform="rotate(25 298 -21)"/>
+
+      <!-- Studio Condenser Microphone Foam Windscreen (Large Black Capsule) -->
+      <g transform="translate(305, 30) rotate(22)">
+        <ellipse cx="0" cy="0" rx="38" ry="54" fill="url(#foamShade)" filter="url(#softShadow)"/>
+        <!-- Texture details on pop filter -->
+        <ellipse cx="-8" cy="-10" rx="28" ry="40" fill="#475569" opacity="0.25"/>
+        <ellipse cx="6" cy="12" rx="24" ry="34" fill="#0f172a" opacity="0.6"/>
+      </g>
+    </g>
+
+    <!-- ON-AIR Live Indicator Light (Subtle Studio Atmosphere) -->
+    <g transform="translate(620, 45)">
+      <rect x="0" y="0" width="135" height="42" fill="#0f172a" rx="8" stroke="#334155" stroke-width="2"/>
+      <circle cx="22" cy="21" r="7" fill="#ef4444" filter="url(#studioGlow)"/>
+      <text x="75" y="27" font-family="'Outfit', Arial, sans-serif" font-size="15" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="2">ON-AIR</text>
+    </g>
+
+    <!-- Lower Name Badge Overlay for Founder Spotlight -->
+    <g transform="translate(30, 715)">
+      <rect x="0" y="0" width="380" height="65" fill="#064e3b" fill-opacity="0.92" rx="12" stroke="#34d399" stroke-width="2"/>
+      <text x="20" y="28" font-family="'Outfit', Arial, sans-serif" font-size="16" font-weight="800" fill="#ffffff">Charles Ogunnowo Olorunfemi</text>
+      <text x="20" y="48" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#34d399">Founder &amp; General Manager • Global Villaje Media</text>
+    </g>
+
+  </g>
+</svg>

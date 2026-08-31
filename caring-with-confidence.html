@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caring with Confidence™ | Health Literacy for Unpaid Carers</title>
+  <meta name="description" content="Explore GVM's culturally responsive health-literacy and empowerment programme for unpaid carers, families and the people they support.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerLogo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="220" height="48">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About GVM</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link active">Programmes &amp; Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link">Echoes of Us (Legacy Films)</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link active">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link">Documentary &amp; Storytelling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="watch-and-listen.html" class="nav-link">
+              Watch &amp; Listen
+              <span class="nav-live-pill"><i class="fas fa-play" style="font-size: 0.55rem;"></i> Videos</span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-youtube-nav btn-sm" id="headerYoutubeBtn">
+          <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </a>
+        <a href="work-with-us.html" class="btn btn-primary btn-sm" id="headerCtaBtn">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="195" height="44">
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About GVM</a></li>
+      <li>
+        <a href="programmes-and-services.html" class="mobile-nav-link active">Programmes &amp; Services</a>
+        <ul class="mobile-submenu">
+          <li><a href="health-wellness-wellbeing-hour.html" class="mobile-submenu-link">• The Health, Wellness &amp; Wellbeing Hour</a></li>
+          <li><a href="echoes-of-us.html" class="mobile-submenu-link">• Echoes of Us (Legacy Films)</a></li>
+          <li><a href="caring-with-confidence.html" class="mobile-submenu-link active">• Caring with Confidence™</a></li>
+          <li><a href="campaign-in-a-box.html" class="mobile-submenu-link">• Campaign in a Box</a></li>
+          <li><a href="black-health-awareness-campaigns.html" class="mobile-submenu-link">• Black Health Awareness Campaigns</a></li>
+          <li><a href="documentary-storytelling.html" class="mobile-submenu-link">• Documentary &amp; Storytelling</a></li>
+        </ul>
+      </li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch &amp; Listen (YouTube Videos)</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link">Our Work &amp; Case Studies</a></li>
+      <li><a href="insights.html" class="mobile-nav-link">Insights &amp; Articles</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem;">
+      <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-block w-full">
+        <i class="fab fa-youtube"></i> Subscribe @GlobalVillajeMedia
+      </a>
+      <a href="work-with-us.html" class="btn btn-primary btn-block w-full">Commission / Partner</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <!-- HERO -->
+    <section class="page-header-section">
+      <div class="container page-header-content">
+        <span class="badge badge-gold">Health-Literacy & Carers Empowerment</span>
+        <h1 class="page-header-title">Caring with Confidence™</h1>
+        <p class="page-header-lead">
+          Supporting unpaid carers, families and the people they care for through accessible, culturally responsive health information.
+        </p>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+          Caring with Confidence™ is a health-literacy, prevention and empowerment programme designed to help people feel better informed, more confident and better able to navigate caring responsibilities, health appointments and support services.
+        </p>
+        <div style="background: var(--color-primary-subtle); padding: 0.6rem 1.25rem; border-radius: var(--radius-full); display: inline-block; margin-top: 0.75rem; font-weight: 600; color: var(--color-primary);">
+          Foundation Pilot available for commissioning and local adaptation.
+        </div>
+        <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#foundationPilot" class="btn btn-secondary"><i class="fas fa-layer-group"></i> Explore the Foundation Pilot</a>
+          <a href="work-with-us.html" class="btn btn-primary"><i class="fas fa-handshake"></i> Discuss a Local Pilot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CARING WITH CONFIDENCE™ IS NEEDED -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="badge badge-primary mb-3">The Case for Change</span>
+            <h2 class="section-title">Why Caring with Confidence™ is needed</h2>
+            <p>
+              Many people do not initially identify themselves as carers. They see themselves as a husband, wife, daughter, son, parent, sibling or friend who is simply helping someone they love.
+            </p>
+            <p>
+              As caring responsibilities grow, people may need to understand health conditions, medication, appointments, services, benefits and emergency planning while also protecting their own health. Information is often scattered, difficult to interpret or not communicated in a culturally relevant way.
+            </p>
+            <p>
+              Caring with Confidence™ brings practical learning, trusted conversation and signposting together in one adaptable programme. It complements existing carers’ services and helps organisations address health-literacy and service-navigation gaps.
+            </p>
+          </div>
+          <div>
+            <div class="hero-image-card">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80" alt="Unpaid carer supporting family member with dignity">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO THE PROGRAMME SUPPORTS -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-accent">Beneficiaries & Carers</span>
+          <h2 class="section-title">Who the programme supports</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;">
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fas fa-user-shield" style="color: var(--color-accent); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+            <div>People providing unpaid support because of illness, disability, mental ill health or age.</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fas fa-heart" style="color: var(--color-accent); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+            <div>Family members who do not yet recognise themselves as carers.</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fas fa-wheelchair" style="color: var(--color-accent); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+            <div>People living with long-term conditions and the relatives or friends supporting them.</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fas fa-users" style="color: var(--color-accent); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+            <div>Black African and Caribbean carers and families experiencing cultural or communication barriers.</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fas fa-hands-helping" style="color: var(--color-accent); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+            <div>Non-Black carers supporting a Black family member or friend.</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fas fa-globe-africa" style="color: var(--color-accent); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+            <div>Wider communities where health inequalities, access barriers or low health literacy are present.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE FOUNDATION PILOT -->
+    <section class="section" id="foundationPilot">
+      <div class="container">
+        <div style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 3.5rem; box-shadow: var(--shadow-lg);">
+          <div class="section-header text-center">
+            <span class="badge badge-gold">Turnkey Pilot</span>
+            <h2 class="section-title">The Foundation Pilot</h2>
+            <p class="section-lead">
+              The Foundation Pilot provides a practical starting point that can be adapted to local needs, existing services and commissioner priorities.
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;">
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-volume-up text-emerald-600"></i> Six to eight short audio-learning modules.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-laptop text-emerald-600"></i> One live online learning session.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-chalkboard-teacher text-emerald-600"></i> One in-person learning session.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-microphone text-emerald-600"></i> One professionally hosted health conversation.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-tasks text-emerald-600"></i> Practical summaries, checklists and signposting.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-comments text-emerald-600"></i> Carer, family and stakeholder feedback.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-poll text-emerald-600"></i> Pre- and post-programme evaluation.</div>
+            <div style="background: var(--bg-surface-subtle); padding: 1.25rem; border-radius: var(--radius-sm);"><i class="fas fa-file-alt text-emerald-600"></i> A concise learning and impact report.</div>
+          </div>
+
+          <p style="text-align: center; color: var(--text-light); font-size: 0.95rem; margin-bottom: 2rem;">
+            The final number, length and format of activities will be agreed with the commissioning organisation.
+          </p>
+
+          <div style="text-align: center;">
+            <a href="work-with-us.html" class="btn btn-primary btn-lg">Request the Foundation Pilot Outline <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVERY & CO-DESIGN SESSION -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div style="max-width: 880px; margin: 0 auto; background: #ffffff; padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <span class="badge badge-primary mb-3">A Manageable First Step</span>
+          <h2 style="margin-bottom: 1rem;">Discovery and Co-design Session</h2>
+          <p>
+            Organisations that are not ready to commission a full pilot can begin with a professionally facilitated Discovery and Co-design Session.
+          </p>
+          <ul style="margin: 1.5rem 0; font-size: 0.95rem;">
+            <li>One facilitated listening and insight session.</li>
+            <li>Participation from carers, family members, staff or relevant community stakeholders.</li>
+            <li>Identification of health-literacy and service-navigation gaps.</li>
+            <li>Consideration of cultural and communication needs.</li>
+            <li>Five practical recommendations.</li>
+            <li>A short insight summary.</li>
+            <li>An outline for a locally adapted Foundation Pilot.</li>
+          </ul>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            The session can draw on a manageable group and existing organisational knowledge. It does not require a large-scale carer recruitment exercise before work can begin.
+          </p>
+          <a href="work-with-us.html" class="btn btn-secondary">Discuss a Discovery Session <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING THEMES & CULTURAL RESPONSIVENESS -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem;">
+          <div>
+            <span class="badge badge-primary mb-3">Curriculum</span>
+            <h2 class="section-title">Learning themes</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.5rem;">
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Recognising the caring role</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Looking after your own health</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Understanding conditions & treatments</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Medication awareness & conversations</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Preparing for appointments</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Navigating health & care services</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Benefits, employment & support</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Relationships, stress and sleep</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">Emergency & contingency planning</div>
+              <div style="background: var(--bg-surface-subtle); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600;">End-of-life care & bereavement</div>
+            </div>
+          </div>
+
+          <div>
+            <span class="badge badge-accent mb-3">Cultural Grounding</span>
+            <h2 class="section-title">Culturally responsive by design</h2>
+            <p>
+              Cultural responsiveness is embedded throughout Caring with Confidence™. The programme considers how culture, identity, family expectations, faith, language, stigma, trust and previous experiences of services can affect how people understand information and seek support.
+            </p>
+            <p>
+              GVM has particular expertise in engaging Black African and Caribbean communities, while the model can be adapted for diverse communities and local circumstances.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE FOR COMMISSIONERS & DELIVERY -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem;">
+          <div>
+            <span class="badge badge-primary mb-3">Strategic Impact</span>
+            <h2 class="section-title">Value for commissioners and partners</h2>
+            <ul style="list-style: none; padding: 0; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Supports prevention and earlier action.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Improves confidence in using health information.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Strengthens preparation for appointments and conversations.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Complements existing carers’ provision.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Creates reusable, accessible learning content.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Provides structured community insight and feedback.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Supports culturally responsive engagement.</li>
+              <li style="display: flex; gap: 0.6rem; align-items: center;"><i class="fas fa-check text-emerald-600"></i> Generates practical learning for future service development.</li>
+            </ul>
+          </div>
+
+          <div>
+            <span class="badge badge-accent mb-3">Robust Methodology</span>
+            <h2 class="section-title">Delivery and evaluation</h2>
+            <p>
+              GVM will agree the audience, location, learning priorities, recruitment approach, delivery partners and intended outcomes with the commissioner. Evaluation can include participation, completion, confidence, knowledge, usefulness and intended behaviour change, supported by qualitative feedback.
+            </p>
+            <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-light);">
+              <strong>Important Disclaimer:</strong> Caring with Confidence™ provides education and signposting. It does not replace individual medical advice, diagnosis, treatment, legal advice or statutory carer assessment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAS -->
+    <section class="section">
+      <div class="container text-center">
+        <div style="max-width: 760px; margin: 0 auto; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 3.5rem; box-shadow: var(--shadow-lg);">
+          <span class="badge badge-gold mb-3">Commission</span>
+          <h2 style="margin-bottom: 1rem;">Bring Caring with Confidence™ to your community</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+            If your organisation supports carers, families or people living with long-term conditions, GVM would welcome a conversation about a Discovery Session or locally adapted Foundation Pilot.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="work-with-us.html" class="btn btn-primary">Commission a Foundation Pilot <i class="fas fa-arrow-right"></i></a>
+            <a href="work-with-us.html" class="btn btn-secondary">Start With a Discovery Session</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-bio">
+          <a href="index.html" class="footer-logo" aria-label="Global Villaje Media Home">
+            <img src="assets/logo-horizontal-white.svg" alt="Global Villaje Media Logo" class="footer-logo-img" width="230" height="52">
+          </a>
+          <p>
+            Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us (Legacy Films)</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary &amp; Storytelling</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes &amp; Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch &amp; Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

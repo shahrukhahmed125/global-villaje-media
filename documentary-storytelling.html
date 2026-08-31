@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentary and Long-Form Storytelling | Global Villaje Media</title>
+  <meta name="description" content="Explore GVM's culturally grounded documentary productions exploring health inequalities, community resilience, diaspora experience and personal journeys.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerLogo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="220" height="48">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About GVM</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link active">Programmes &amp; Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link">Echoes of Us (Legacy Films)</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link active">Documentary &amp; Storytelling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="watch-and-listen.html" class="nav-link">
+              Watch &amp; Listen
+              <span class="nav-live-pill"><i class="fas fa-play" style="font-size: 0.55rem;"></i> Videos</span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-youtube-nav btn-sm" id="headerYoutubeBtn">
+          <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </a>
+        <a href="work-with-us.html" class="btn btn-primary btn-sm" id="headerCtaBtn">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="195" height="44">
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About GVM</a></li>
+      <li>
+        <a href="programmes-and-services.html" class="mobile-nav-link active">Programmes &amp; Services</a>
+        <ul class="mobile-submenu">
+          <li><a href="health-wellness-wellbeing-hour.html" class="mobile-submenu-link">• The Health, Wellness &amp; Wellbeing Hour</a></li>
+          <li><a href="echoes-of-us.html" class="mobile-submenu-link">• Echoes of Us (Legacy Films)</a></li>
+          <li><a href="caring-with-confidence.html" class="mobile-submenu-link">• Caring with Confidence™</a></li>
+          <li><a href="campaign-in-a-box.html" class="mobile-submenu-link">• Campaign in a Box</a></li>
+          <li><a href="black-health-awareness-campaigns.html" class="mobile-submenu-link">• Black Health Awareness Campaigns</a></li>
+          <li><a href="documentary-storytelling.html" class="mobile-submenu-link active">• Documentary &amp; Storytelling</a></li>
+        </ul>
+      </li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch &amp; Listen (YouTube Videos)</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link">Our Work &amp; Case Studies</a></li>
+      <li><a href="insights.html" class="mobile-nav-link">Insights &amp; Articles</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem;">
+      <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-block w-full">
+        <i class="fab fa-youtube"></i> Subscribe @GlobalVillajeMedia
+      </a>
+      <a href="work-with-us.html" class="btn btn-primary btn-block w-full">Commission / Partner</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <!-- HERO -->
+    <section class="page-header-section">
+      <div class="container page-header-content">
+        <span class="badge badge-accent">Long-Form Storytelling</span>
+        <h1 class="page-header-title">Documentary and Long-Form Storytelling</h1>
+        <p class="page-header-lead">
+          Deep, culturally grounded storytelling on health, community, identity and lived experience.
+        </p>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+          Global Villaje Media develops documentary and longer-form productions exploring health inequalities, community resilience, diaspora experience and personal journeys.
+        </p>
+        <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#projectsInDev" class="btn btn-secondary"><i class="fas fa-film"></i> View Projects in Development</a>
+          <a href="work-with-us.html" class="btn btn-primary"><i class="fas fa-video"></i> Discuss a Documentary Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY DOCUMENTARY STORYTELLING -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="badge badge-primary mb-3">Narrative Depth</span>
+            <h2 class="section-title">The power of long-form human documentary</h2>
+            <p>
+              Documentaries allow complex health, social and cultural issues to be explored with the depth, context and human nuance they deserve. They give voice to lived experience, create an enduring historical record and generate empathy and insight that short-form media cannot always achieve.
+            </p>
+            
+            <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.25rem;">Approaches to documentary production:</h3>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; gap: 0.6rem; align-items: flex-start;">
+                <i class="fas fa-check-circle" style="color: var(--color-accent); margin-top: 0.2rem;"></i>
+                <div><strong>Commissioned Documentaries:</strong> Developed for or in partnership with organisations seeking to explore a specific theme, community or milestone.</div>
+              </li>
+              <li style="display: flex; gap: 0.6rem; align-items: flex-start;">
+                <i class="fas fa-check-circle" style="color: var(--color-accent); margin-top: 0.2rem;"></i>
+                <div><strong>Development and Independent Projects:</strong> GVM-originated projects exploring subjects of cultural, social and health significance.</div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="hero-image-card">
+              <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80" alt="Cinematic documentary camera set">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS IN DEVELOPMENT -->
+    <section class="section section-subtle" id="projectsInDev">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-accent">Production Slate</span>
+          <h2 class="section-title">Projects in development</h2>
+          <p class="section-lead">
+            Transparently presented with real production milestones and collaborative co-production opportunities.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+          <!-- Project 1 -->
+          <div style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-md); display: flex; flex-direction: column;">
+            <div style="position: relative; height: 240px;">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80" alt="Echoes of Care documentary film" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; top: 1rem; left: 1rem; background: var(--color-primary); color: #fff; padding: 0.35rem 0.85rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700;">
+                Development Status: Treatment and research stage
+              </div>
+            </div>
+            <div style="padding: 2rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 style="margin-bottom: 0.75rem;">Echoes of Care: Unseen Hands, Untold Stories</h3>
+              <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem;">
+                A feature-length or episodic documentary exploring the lives, sacrifices and emotional resilience of unpaid carers in Black African and Caribbean communities across the UK.
+              </p>
+              <div style="margin-top: auto;">
+                <a href="work-with-us.html" class="btn btn-secondary btn-sm w-full">Enquire About Co-Production / Support</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-md); display: flex; flex-direction: column;">
+            <div style="position: relative; height: 240px;">
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Breaking the Silence prostate cancer documentary" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; top: 1rem; left: 1rem; background: var(--color-accent); color: #fff; padding: 0.35rem 0.85rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700;">
+                Development Status: Concept and initial outreach
+              </div>
+            </div>
+            <div style="padding: 2rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 style="margin-bottom: 0.75rem;">Breaking the Silence: Prostate Cancer and the Black Community</h3>
+              <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem;">
+                An investigative and personal documentary exploring the heightened risks of prostate cancer among Black men, examining cultural taboos, diagnostic pathways and the lives changed by early detection.
+              </p>
+              <div style="margin-top: auto;">
+                <a href="work-with-us.html" class="btn btn-secondary btn-sm w-full">Enquire About Co-Production / Support</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMISSIONING A DOCUMENTARY & DISCLAIMER -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div style="background: #ffffff; padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <span class="badge badge-primary mb-3">Partnering With Us</span>
+          <h2 style="margin-bottom: 1rem;">Commissioning a documentary</h2>
+          <p>
+            Organisations with a story to tell, an anniversary to mark or a community issue to explore in depth can commission GVM to develop and produce a documentary project from concept to final screening.
+          </p>
+          <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-surface-subtle); border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-light);">
+            <strong>Development Status Transparency:</strong> Projects listed as "in development" are currently in progress and not yet completed. Status labels reflect current production stage accurately.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-subtle">
+      <div class="container text-center">
+        <div style="max-width: 760px; margin: 0 auto; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 3.5rem; box-shadow: var(--shadow-lg);">
+          <span class="badge badge-accent mb-3">Collaborate</span>
+          <h2 style="margin-bottom: 1rem;">Discuss a documentary project</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+            Whether you want to support a project in development or commission an original long-form production, GVM would be pleased to speak with you.
+          </p>
+          <a href="work-with-us.html" class="btn btn-primary btn-lg">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-bio">
+          <a href="index.html" class="footer-logo" aria-label="Global Villaje Media Home">
+            <img src="assets/logo-horizontal-white.svg" alt="Global Villaje Media Logo" class="footer-logo-img" width="230" height="52">
+          </a>
+          <p>
+            Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us (Legacy Films)</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary &amp; Storytelling</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes &amp; Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch &amp; Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

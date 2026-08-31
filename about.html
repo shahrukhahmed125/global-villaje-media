@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Global Villaje Media | Health Communication and Engagement</title>
+  <meta name="description" content="Learn how GVM combines health and social-care knowledge, community media and culturally responsive storytelling to address health inequalities.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="220" height="48">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">About GVM</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link">Programmes &amp; Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link">Echoes of Us (Legacy Films)</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link">Documentary &amp; Storytelling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="watch-and-listen.html" class="nav-link">
+              Watch &amp; Listen
+              <span class="nav-live-pill"><i class="fas fa-play" style="font-size: 0.55rem;"></i> Videos</span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-youtube-nav btn-sm">
+          <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </a>
+        <a href="work-with-us.html" class="btn btn-primary btn-sm">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="195" height="44">
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link active">About GVM</a></li>
+      <li>
+        <a href="programmes-and-services.html" class="mobile-nav-link">Programmes &amp; Services</a>
+        <ul class="mobile-submenu">
+          <li><a href="health-wellness-wellbeing-hour.html" class="mobile-submenu-link">• The Health, Wellness &amp; Wellbeing Hour</a></li>
+          <li><a href="echoes-of-us.html" class="mobile-submenu-link">• Echoes of Us (Legacy Films)</a></li>
+          <li><a href="caring-with-confidence.html" class="mobile-submenu-link">• Caring with Confidence™</a></li>
+          <li><a href="campaign-in-a-box.html" class="mobile-submenu-link">• Campaign in a Box</a></li>
+          <li><a href="black-health-awareness-campaigns.html" class="mobile-submenu-link">• Black Health Awareness Campaigns</a></li>
+          <li><a href="documentary-storytelling.html" class="mobile-submenu-link">• Documentary &amp; Storytelling</a></li>
+        </ul>
+      </li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch &amp; Listen (YouTube Videos)</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link">Our Work &amp; Case Studies</a></li>
+      <li><a href="insights.html" class="mobile-nav-link">Insights &amp; Articles</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem;">
+      <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-block w-full">
+        <i class="fab fa-youtube"></i> Subscribe @GlobalVillajeMedia
+      </a>
+      <a href="work-with-us.html" class="btn btn-primary btn-block w-full">Commission / Partner</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <!-- HERO -->
+    <section class="page-header-section">
+      <div class="container page-header-content">
+        <span class="badge badge-primary">Company Story & Purpose</span>
+        <h1 class="page-header-title">About Global Villaje Media</h1>
+        <p class="page-header-lead">
+          Health communication rooted in trust, representation and community voice.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="badge badge-accent mb-3">Who We Are</span>
+            <h2 class="section-title">Bridging the gap with culturally responsive engagement</h2>
+            <p>
+              Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+            </p>
+            <p>
+              GVM helps NHS organisations, charities and public bodies bridge the gap between services and Black African and Caribbean communities through trusted communication, culturally responsive engagement and community storytelling.
+            </p>
+            <p>
+              We create accessible health conversations, campaigns and programmes that connect professional knowledge with lived experience. Our work pays particular attention to health issues and barriers that disproportionately affect Black communities, while many of our services can be adapted for wider communities experiencing inequality or exclusion.
+            </p>
+          </div>
+          <div>
+            <div class="hero-image-card">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Professional health communication panel and community dialogue">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY GVM EXISTS -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div style="max-width: 860px; margin: 0 auto;">
+          <div class="section-header text-center">
+            <span class="badge badge-primary">Context & Social Impact</span>
+            <h2 class="section-title">Why GVM exists</h2>
+          </div>
+          <p style="font-size: 1.05rem; line-height: 1.75;">
+            The unequal impact of COVID-19 highlighted how health outcomes are shaped by access to trusted information, representation, confidence in services and wider social conditions. It also reinforced the importance of communication that communities can understand, question and recognise.
+          </p>
+          <p style="font-size: 1.05rem; line-height: 1.75;">
+            GVM was established to bring health and social-care understanding together with community media and culturally grounded storytelling. Our aim is to help important information travel further, create space for voices that are often overlooked and support more meaningful engagement between organisations and communities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+          <div style="background: #ffffff; padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-md); border-top: 4px solid var(--color-primary);">
+            <div class="floating-icon" style="background: var(--color-primary-subtle); color: var(--color-primary); margin-bottom: 1.25rem;">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 style="margin-bottom: 1rem;">Our Mission</h3>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+              To improve health literacy, address health inequalities and promote quality health through trusted communication, culturally responsive engagement and community storytelling.
+            </p>
+          </div>
+
+          <div style="background: #ffffff; padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-md); border-top: 4px solid var(--color-accent);">
+            <div class="floating-icon" style="background: var(--color-accent-light); color: #065f46; margin-bottom: 1.25rem;">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3 style="margin-bottom: 1rem;">Our Vision</h3>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+              A future where every community has equitable access to trusted health information, feels represented in health conversations and is empowered to make informed decisions about health and wellbeing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT MAKES GVM DIFFERENT -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-accent">Distinct Advantage</span>
+          <h2 class="section-title">What makes GVM different</h2>
+          <p class="section-lead">A unique combination of clinical comprehension, grassroots community access, and broadcast media capability.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-heartbeat"></i></div>
+            <h4 style="margin-bottom: 0.5rem;">Specialist Focus</h4>
+            <p style="font-size: 0.95rem; margin: 0;">A specialist focus on health literacy and health inequalities across public-health and community domains.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-users"></i></div>
+            <h4 style="margin-bottom: 0.5rem;">Cultural Grounding</h4>
+            <p style="font-size: 0.95rem; margin: 0;">Particular expertise engaging Black African and Caribbean communities with nuance and dignity.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-user-graduate"></i></div>
+            <h4 style="margin-bottom: 0.5rem;">20+ Years Sector Knowledge</h4>
+            <p style="font-size: 0.95rem; margin: 0;">More than 20 years of health and social-care education and assessment experience informing the work.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-microphone"></i></div>
+            <h4 style="margin-bottom: 0.5rem;">Media & Production</h4>
+            <p style="font-size: 0.95rem; margin: 0;">Community broadcasting combined with professional multimedia, podcast, video and documentary production.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-shield-alt"></i></div>
+            <h4 style="margin-bottom: 0.5rem;">Lived Experience Dignity</h4>
+            <p style="font-size: 0.95rem; margin: 0;">A steadfast commitment to lived experience, contributor dignity, and responsible storytelling safeguards.</p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-layer-group"></i></div>
+            <h4 style="margin-bottom: 0.5rem;">Flexible Engagement</h4>
+            <p style="font-size: 0.95rem; margin: 0;">Flexible support ranging from one single conversation to a borough-wide campaign or long-term programme.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER PROFILE -->
+    <section class="section" id="founderSection">
+      <div class="container">
+        <div style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-lg); overflow: hidden;">
+          <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: center;">
+            <div style="height: 100%; min-height: 420px; background: #0f172a; display: flex; align-items: center; justify-content: center;">
+              <img src="assets/founder-charles-studio.svg" alt="Charles Ogunnowo Olorunfemi, Founder & General Manager of Global Villaje Media broadcasting in studio" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 3.5rem;">
+              <span class="badge badge-primary mb-2">Leadership</span>
+              <h2 style="margin-bottom: 0.25rem;">Charles Ogunnowo Olorunfemi</h2>
+              <h4 style="color: var(--color-accent-hover); font-weight: 600; margin-bottom: 1.25rem;">Founder and General Manager</h4>
+              
+              <p>
+                Charles Ogunnowo Olorunfemi is the Founder/General Manager of Global Villaje Media and host of The Health, Wellness & Wellbeing Hour.
+              </p>
+              <p>
+                He brings more than 20 years of experience in health and social-care education, assessment and quality assurance, supported by a Foundation Degree in Community Media and a BSc in Creative Industries.
+              </p>
+              <p>
+                Charles established GVM to combine his understanding of health and care with broadcasting, creative production and community engagement. His work focuses on making health information more accessible, exploring the experiences behind health inequalities and creating respectful spaces where professional and community voices can meet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHERE WE WORK -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="badge badge-primary mb-3">Broadcasting Base & Reach</span>
+            <h2 class="section-title">Where we work</h2>
+            <p>
+              GVM broadcasts from Watford and Brent, with local, regional, national and global reach through radio and digital platforms.
+            </p>
+            <p>
+              Global Villaje Media is a company limited by shares, established in December 2025.
+            </p>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+              <a href="programmes-and-services.html" class="btn btn-primary">Explore Our Programmes <i class="fas fa-arrow-right"></i></a>
+              <a href="work-with-us.html" class="btn btn-secondary">Work With GVM</a>
+            </div>
+          </div>
+          <div>
+            <div class="hero-image-card">
+              <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80" alt="Watford and Brent London broadcast community reach">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-bio">
+          <a href="index.html" class="footer-logo" aria-label="Global Villaje Media Home">
+            <img src="assets/logo-horizontal-white.svg" alt="Global Villaje Media Logo" class="footer-logo-img" width="230" height="52">
+          </a>
+          <p>
+            Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us (Legacy Films)</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary &amp; Storytelling</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link active">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes &amp; Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch &amp; Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

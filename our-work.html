@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work & Case Studies | Global Villaje Media</title>
+  <meta name="description" content="Discover our published health conversations, community storytelling programmes, media campaigns and collaborative partnerships.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerLogo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="220" height="48">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About GVM</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link">Programmes &amp; Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link">Echoes of Us (Legacy Films)</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link">Documentary &amp; Storytelling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="watch-and-listen.html" class="nav-link">
+              Watch &amp; Listen
+              <span class="nav-live-pill"><i class="fas fa-play" style="font-size: 0.55rem;"></i> Videos</span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link active">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-youtube-nav btn-sm" id="headerYoutubeBtn">
+          <i class="fab fa-youtube"></i> <span>YouTube</span>
+        </a>
+        <a href="work-with-us.html" class="btn btn-primary btn-sm" id="headerCtaBtn">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Global Villaje Media Home">
+        <img src="assets/logo-horizontal.svg" alt="Global Villaje Media Logo" class="brand-logo-img" width="195" height="44">
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About GVM</a></li>
+      <li>
+        <a href="programmes-and-services.html" class="mobile-nav-link">Programmes &amp; Services</a>
+        <ul class="mobile-submenu">
+          <li><a href="health-wellness-wellbeing-hour.html" class="mobile-submenu-link">• The Health, Wellness &amp; Wellbeing Hour</a></li>
+          <li><a href="echoes-of-us.html" class="mobile-submenu-link">• Echoes of Us (Legacy Films)</a></li>
+          <li><a href="caring-with-confidence.html" class="mobile-submenu-link">• Caring with Confidence™</a></li>
+          <li><a href="campaign-in-a-box.html" class="mobile-submenu-link">• Campaign in a Box</a></li>
+          <li><a href="black-health-awareness-campaigns.html" class="mobile-submenu-link">• Black Health Awareness Campaigns</a></li>
+          <li><a href="documentary-storytelling.html" class="mobile-submenu-link">• Documentary &amp; Storytelling</a></li>
+        </ul>
+      </li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch &amp; Listen (YouTube Videos)</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link active">Our Work &amp; Case Studies</a></li>
+      <li><a href="insights.html" class="mobile-nav-link">Insights &amp; Articles</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem;">
+      <a href="https://www.youtube.com/@GlobalVillajeMedia" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-block w-full">
+        <i class="fab fa-youtube"></i> Subscribe @GlobalVillajeMedia
+      </a>
+      <a href="work-with-us.html" class="btn btn-primary btn-block w-full">Commission / Partner</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <!-- HERO -->
+    <section class="page-header-section">
+      <div class="container page-header-content">
+        <span class="badge badge-accent">Impact & Case Studies</span>
+        <h1 class="page-header-title">Our Work</h1>
+        <p class="page-header-lead">
+          What we do, how we deliver it and the organisations we collaborate with.
+        </p>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+          Global Villaje Media develops culturally responsive health communication, community storytelling, media campaigns and educational programmes that bridge the divide between health systems and underserved communities.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOUR PILLARS OF ACTIVITY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Operational Scope</span>
+          <h2 class="section-title">Our four areas of activity</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <div style="background: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <div class="floating-icon" style="background: var(--color-primary-subtle); color: var(--color-primary); margin-bottom: 1rem;">
+              <i class="fas fa-podcast"></i>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">1. Broadcast Health Conversations</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Accessible, human health discussions bringing health professionals, community organisations and people with lived experience together via The Health Hour and digital channels.
+            </p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <div class="floating-icon" style="background: var(--color-accent-light); color: #065f46; margin-bottom: 1rem;">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">2. Community Storytelling</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Preserving living memory, intergenerational connection, diaspora journeys and personal resilience through Echoes of Us story circles and legacy audio.
+            </p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <div class="floating-icon" style="background: rgba(229,169,59,0.15); color: #92400e; margin-bottom: 1rem;">
+              <i class="fas fa-hands-holding-child"></i>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">3. Carers' Health Literacy</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Empowering unpaid carers and families through Caring with Confidence™ audio learning modules, live co-design sessions and practical service navigation.
+            </p>
+          </div>
+
+          <div style="background: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <div class="floating-icon" style="background: var(--color-primary-subtle); color: var(--color-primary); margin-bottom: 1rem;">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">4. Multimedia Campaigns</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Unified, culturally responsive health communication packages through Campaign in a Box and Black Health Awareness initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES & PUBLISHED WORK -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-accent">Proven Track Record</span>
+          <h2 class="section-title">Case studies and published work</h2>
+          <p class="section-lead">A transparent look at genuine broadcast outputs, community engagements and structured pilot initiatives.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 2.5rem; max-width: 960px; margin: 0 auto;">
+          
+          <!-- Case Study 1 -->
+          <div style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; display: grid; grid-template-columns: 1fr 1.3fr; box-shadow: var(--shadow-sm);">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Women's health workshop panel" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="padding: 2.5rem; display: flex; flex-direction: column;">
+              <span class="badge badge-primary mb-2" style="align-self: flex-start;">Published Broadcast Conversation</span>
+              <h3 style="margin-bottom: 0.75rem;">More Than a Workshop: Building Health, Trust and Sisterhood</h3>
+              <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem;">
+                <strong>Context & Delivery:</strong> A dedicated 50-minute broadcast on Chalkhill Community Radio bringing grassroots facilitators and health advocates together to discuss maternal health inequalities, emotional wellbeing and cultural barriers.
+              </p>
+              <div style="font-size: 0.85rem; color: var(--color-primary); font-weight: 600; margin-bottom: 1.5rem;">
+                <i class="fas fa-check-circle text-emerald-600"></i> Radio broadcast + Digital podcast release + 3 social-media video clips.
+              </div>
+              <div style="margin-top: auto;">
+                <a href="watch-and-listen.html" class="btn btn-secondary btn-sm">Watch / Listen to Episode <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; display: grid; grid-template-columns: 1fr 1.3fr; box-shadow: var(--shadow-sm);">
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Prostate Cancer Awareness dialogue" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="padding: 2.5rem; display: flex; flex-direction: column;">
+              <span class="badge badge-accent mb-2" style="align-self: flex-start;">Targeted Awareness Campaign</span>
+              <h3 style="margin-bottom: 0.75rem;">Prostate Cancer UK: Raising Risk Awareness in Black Men</h3>
+              <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem;">
+                <strong>Context & Delivery:</strong> A targeted campaign addressing the 1 in 4 lifetime prostate cancer risk for Black men. Combined clinical insights with lived-experience testimonials to encourage PSA blood testing and reduce cultural fear.
+              </p>
+              <div style="font-size: 0.85rem; color: var(--color-primary); font-weight: 600; margin-bottom: 1.5rem;">
+                <i class="fas fa-check-circle text-emerald-600"></i> Flagship broadcast + Community flyer distribution + Clinical Q&A.
+              </div>
+              <div style="margin-top: auto;">
+                <a href="black-health-awareness-campaigns.html" class="btn btn-secondary btn-sm">View Campaign Model <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLABORATION & TRANSPARENCY -->
+    <section class="section">
+      <div class="container container-narrow text-center">
+        <div style="background: #ffffff; padding: 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+          <div style="font-size: 1.8rem; color: var(--color-primary); margin-bottom: 1rem;"><i class="fas fa-handshake"></i></div>
+          <h3 style="margin-bottom: 1rem;">Collaborative Delivery Network</h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
+            Global Villaje Media collaborates with broadcast partners like Chalkhill Community Radio, NHS public-health leads, local authority community engagement teams, voluntary sector carers organisations, and African and Caribbean diaspora groups.
+          </p>
+          <div style="background: var(--bg-surface-subtle); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-light); text-align: left;">
+            <strong>Editorial Transparency:</strong> We clearly distinguish between completed published broadcasts, structured foundation pilot offers (such as Caring with Confidence™), and projects in creative development (such as our documentary treatments).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-subtle">
+      <div class="container text-center">
+        <div style="max-width: 760px; margin: 0 auto; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 3.5rem; box-shadow: var(--shadow-lg);">
+          <span class="badge badge-primary mb-3">Partner For Impact</span>
+          <h2 style="margin-bottom: 1rem;">Work with us on your next health communication project</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+            Whether you want to sponsor a broadcast conversation, commission a campaign or explore a community pilot, we are ready to discuss your objectives.
+          </p>
+          <a href="work-with-us.html" class="btn btn-primary btn-lg">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-bio">
+          <a href="index.html" class="footer-logo" aria-label="Global Villaje Media Home">
+            <img src="assets/logo-horizontal-white.svg" alt="Global Villaje Media Logo" class="footer-logo-img" width="230" height="52">
+          </a>
+          <p>
+            Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness &amp; Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us (Legacy Films)</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary &amp; Storytelling</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes &amp; Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch &amp; Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved. Registered in England &amp; Wales.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

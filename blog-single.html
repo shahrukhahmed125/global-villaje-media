@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Traditional Health Leaflets Aren’t Enough | GVM Insights</title>
+  <meta name="description" content="Discover why static leaflets fail to bridge health inequalities and how culturally responsive media creates trust and real understanding.">
+  
+  <!-- Google Fonts & Font Awesome 6 CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-symbol"><i class="fas fa-broadcast-tower"></i></div>
+        <div class="logo-text-group">
+          <span class="logo-main-text">GLOBAL VILLAJE</span>
+          <span class="logo-sub-text">MEDIA</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="programmes-and-services.html" class="nav-link">Programmes & Services <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="health-wellness-wellbeing-hour.html" class="nav-dropdown-link">The Health, Wellness & Wellbeing Hour</a></li>
+              <li><a href="echoes-of-us.html" class="nav-dropdown-link">Echoes of Us</a></li>
+              <li><a href="caring-with-confidence.html" class="nav-dropdown-link">Caring with Confidence™</a></li>
+              <li><a href="campaign-in-a-box.html" class="nav-dropdown-link">Campaign in a Box</a></li>
+              <li><a href="black-health-awareness-campaigns.html" class="nav-dropdown-link">Black Health Awareness Campaigns</a></li>
+              <li><a href="documentary-storytelling.html" class="nav-dropdown-link">Documentary & Long-Form</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="watch-and-listen.html" class="nav-link">Watch & Listen</a></li>
+          <li class="nav-item"><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li class="nav-item"><a href="insights.html" class="nav-link active">Insights</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="work-with-us.html" class="btn btn-primary btn-sm">
+          <span>Work With Us</span> <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="logo-symbol"><i class="fas fa-broadcast-tower"></i></div>
+        <div class="logo-text-group">
+          <span class="logo-main-text">GLOBAL VILLAJE</span>
+          <span class="logo-sub-text">MEDIA</span>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawerClose"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About GVM</a></li>
+      <li><a href="programmes-and-services.html" class="mobile-nav-link">Programmes & Services</a></li>
+      <li><a href="watch-and-listen.html" class="mobile-nav-link">Watch & Listen</a></li>
+      <li><a href="our-work.html" class="mobile-nav-link">Our Work</a></li>
+      <li><a href="insights.html" class="mobile-nav-link active">Insights</a></li>
+      <li><a href="work-with-us.html" class="mobile-nav-link">Work With Us</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    
+    <!-- ARTICLE HEADER -->
+    <article class="article-container">
+      <div style="margin-bottom: 2rem;">
+        <a href="insights.html" style="color: var(--color-primary); font-size: 0.9rem; font-weight: 600; text-decoration: none;">
+          <i class="fas fa-arrow-left"></i> Back to All Insights
+        </a>
+      </div>
+
+      <header style="margin-bottom: 2.5rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1rem;">
+          <span class="badge badge-accent">Health Inequalities & Media</span>
+          <span style="font-size: 0.85rem; color: var(--text-light);"><i class="far fa-clock"></i> 5 min read</span>
+        </div>
+        <h1 class="article-title">Why Traditional Health Leaflets Aren’t Enough: Rethinking Community Health Communication</h1>
+        
+        <div class="article-meta" style="margin-top: 1.5rem;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; overflow: hidden; background: var(--color-primary);">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Charles Ogunnowo Olorunfemi" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div>
+            <div style="font-weight: 700; color: var(--color-primary);">Charles Ogunnowo Olorunfemi</div>
+            <div style="font-size: 0.85rem; color: var(--text-light);">Founder & General Manager, Global Villaje Media</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO IMAGE -->
+      <div style="border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 2.5rem; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80" alt="Health leaflets and community communication" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <!-- ARTICLE BODY -->
+      <div class="article-body">
+        <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-primary); line-height: 1.75;">
+          Every year, millions of pounds are spent designing, printing and distributing glossy health leaflets. They sit on reception desks in GP surgeries, community centres and libraries. Yet, when health disparities are measured year after year, the same communities remain disengaged, under-diagnosed and hesitant to seek earlier support.
+        </p>
+
+        <p>
+          Why does this happen? The issue is rarely a lack of clinical knowledge; it is a fundamental flaw in communication architecture. Traditional health public communications rely heavily on passive, one-way dissemination that ignores cultural nuance, historical trust deficits and how humans actually process risk.
+        </p>
+
+        <h2>The Limits of One-Way Dissemination</h2>
+        <p>
+          A printed flyer cannot answer an unspoken fear. It cannot address a cultural stigma, and it cannot validate a personal experience. When someone picks up a leaflet describing high blood pressure or prostate cancer symptoms, they are reading clinical text divorced from the social fabric of their daily life.
+        </p>
+        <p>
+          For Black African and Caribbean communities in particular, healthcare navigation is influenced by generational experiences, community conversations, faith perspectives and varying levels of trust in statutory institutions. When messages arrive in clinical jargon or sterile corporate branding, they are often perceived as remote and disconnected.
+        </p>
+
+        <blockquote style="margin: 2rem 0; padding: 1.5rem 2rem; background: var(--bg-surface-subtle); border-left: 4px solid var(--color-accent); border-radius: 0 var(--radius-md) var(--radius-md) 0; font-size: 1.1rem; font-style: italic; color: var(--color-primary);">
+          "Health literacy is not simply the ability to read a medical sentence; it is the confidence to understand its relevance, ask questions, and take meaningful action."
+        </blockquote>
+
+        <h2>Culture, Context and the Missing Middle</h2>
+        <p>
+          Between high-level epidemiological guidance and individual patient choices lies what we call the "missing middle": the trusted communal spaces where beliefs are debated and decisions are made.
+        </p>
+        <p>
+          Whether in barbershops, places of worship, family dining rooms or community radio broadcasts, health decisions are social. When health institutions bypass these spaces in favour of passive leaflet drops, they miss the opportunity to foster authentic dialogue.
+        </p>
+
+        <h2>What Culturally Responsive Communication Looks Like</h2>
+        <p>
+          Transforming health communication from passive output into active engagement requires four foundational shifts:
+        </p>
+
+        <h3>1. Meet people in trusted spaces</h3>
+        <p>
+          Utilise channels that communities already listen to and trust—such as community radio, conversational podcasts, video shorts and grassroots workshops—rather than relying solely on hospital waiting rooms.
+        </p>
+
+        <h3>2. Combine clinical clarity with human warmth</h3>
+        <p>
+          Pair medical consultants and public health leads with community champions and people who have navigated the condition firsthand. Lived experience provides the bridge that makes clinical facts believable and actionable.
+        </p>
+
+        <h3>3. Turn monologues into conversations</h3>
+        <p>
+          Structured, accessible broadcast dialogues—like <a href="health-wellness-wellbeing-hour.html" style="color: var(--color-primary); font-weight: 600;">The Health, Wellness & Wellbeing Hour</a>—allow listeners to hear real questions being asked and answered with empathy, demystifying intimidating medical jargon.
+        </p>
+
+        <h3>4. Create reusable multimedia assets</h3>
+        <p>
+          A single 50-minute health discussion can be distilled into short video clips for social media, audio explainers for messaging apps, and QR-enabled community cards through packages like <a href="campaign-in-a-box.html" style="color: var(--color-primary); font-weight: 600;">Campaign in a Box</a>.
+        </p>
+
+        <h2>From Information to Real Understanding</h2>
+        <p>
+          To close health inequality gaps across the UK, we must move past the assumption that printing more leaflets equals community engagement. By investing in culturally grounded storytelling, broadcast dialogue and accessible media, healthcare organisations can build the enduring trust that saves lives.
+        </p>
+      </div>
+
+      <!-- AUTHOR BIO CARD -->
+      <div style="background: #ffffff; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color); margin-top: 3.5rem; display: flex; gap: 1.75rem; align-items: center; box-shadow: var(--shadow-sm);">
+        <div style="width: 90px; height: 90px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 2px solid var(--color-accent);">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Charles Ogunnowo Olorunfemi" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <h4 style="margin-bottom: 0.25rem; font-size: 1.15rem;">About the Author</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem;">
+            <strong>Charles Ogunnowo Olorunfemi</strong> is the Founder & General Manager of Global Villaje Media. He combines 20+ years of health and social-care education experience with expertise in community broadcast and social-impact media.
+          </p>
+          <a href="about.html" style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary);">Read more about GVM's leadership &rarr;</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- RELATED POSTS -->
+    <section class="section section-subtle">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Keep Reading</span>
+          <h2 class="section-title">Related articles & insights</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+          <div class="media-card">
+            <div class="media-card-thumbnail">
+              <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80" alt="Carers health literacy">
+            </div>
+            <div class="media-card-body">
+              <span class="media-meta-tag">Carers & Health</span>
+              <h3 class="media-card-title"><a href="blog-single.html" style="color: inherit; text-decoration: none;">Supporting the Unseen Carer: Why Health Literacy Matters</a></h3>
+              <p class="media-card-excerpt">How empowering family carers transforms outcomes for both carer and care recipient.</p>
+            </div>
+          </div>
+
+          <div class="media-card">
+            <div class="media-card-thumbnail">
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Prostate cancer risk awareness">
+            </div>
+            <div class="media-card-body">
+              <span class="media-meta-tag">Men's Health</span>
+              <h3 class="media-card-title"><a href="blog-single.html" style="color: inherit; text-decoration: none;">Prostate Cancer and Black Men: Why Conversation Saves Lives</a></h3>
+              <p class="media-card-excerpt">Addressing the 1 in 4 lifetime risk by breaking down stigma through community broadcast.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container text-center">
+        <div style="max-width: 760px; margin: 0 auto; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 3.5rem; box-shadow: var(--shadow-lg);">
+          <span class="badge badge-accent mb-3">Partner For Impact</span>
+          <h2 style="margin-bottom: 1rem;">Ready to rethink your health communication?</h2>
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+            Discover how GVM can help your organisation develop culturally responsive broadcasts, campaigns and community programmes.
+          </p>
+          <a href="work-with-us.html" class="btn btn-primary btn-lg">Discuss Your Priorities <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-bio">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-symbol"><i class="fas fa-broadcast-tower"></i></div>
+            <div class="logo-text-group">
+              <span class="logo-main-text" style="color: #ffffff;">GLOBAL VILLAJE</span>
+              <span class="logo-sub-text">MEDIA</span>
+            </div>
+          </div>
+          <p>
+            Global Villaje Media is a UK-based social-impact health media company using radio, video, audio, digital media and community storytelling to improve health literacy, address health inequalities and promote quality health.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul class="footer-nav-list">
+            <li><a href="health-wellness-wellbeing-hour.html" class="footer-nav-link">The Health, Wellness & Wellbeing Hour</a></li>
+            <li><a href="echoes-of-us.html" class="footer-nav-link">Echoes of Us</a></li>
+            <li><a href="caring-with-confidence.html" class="footer-nav-link">Caring with Confidence™</a></li>
+            <li><a href="campaign-in-a-box.html" class="footer-nav-link">Campaign in a Box</a></li>
+            <li><a href="black-health-awareness-campaigns.html" class="footer-nav-link">Black Health Awareness Campaigns</a></li>
+            <li><a href="documentary-storytelling.html" class="footer-nav-link">Documentary & Long-Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About GVM</a></li>
+            <li><a href="programmes-and-services.html" class="footer-nav-link">Programmes & Services</a></li>
+            <li><a href="watch-and-listen.html" class="footer-nav-link">Watch & Listen Hub</a></li>
+            <li><a href="our-work.html" class="footer-nav-link">Our Work</a></li>
+            <li><a href="insights.html" class="footer-nav-link">Insights & Blogs</a></li>
+            <li><a href="work-with-us.html" class="footer-nav-link">Work With Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span>07915 697589</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span>info@globalvillajemedia.org</span></div>
+          <div class="footer-contact-item"><i class="fas fa-globe"></i> <span>www.globalvillajemedia.org</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Global Villaje Media. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="refunds.html">Commission & Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
