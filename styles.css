@@ -1,6 +1,6 @@
 /* ==========================================================================
    GLOBAL VILLAJE MEDIA - MASTER STYLESHEET
-   Aesthetic: Vibrant, Human-Centric, Warm & Inspiring Community Health NGO
+   Aesthetic: Vibrant, Human-Centric, Warm & Inspiring Community Health & Storytelling
    Palette: Rich Forest & Emerald Green (#065f46, #059669, #10b981), 
    Sunlit Warm Gold & Amber (#d97706, #f59e0b, #fbbf24), Warm Terracotta Coral (#ea580c),
    Crisp Canvas (#fbfbfa, #ffffff, #f8fafc), Deep Slate Charcoal (#0f172a, #1e293b, #334155)
@@ -1430,7 +1430,7 @@ li { margin-bottom: 0.5rem; }
 }
 
 /* ==========================================================================
-   TRUST METRICS & NGO IMPACT NUMBERS
+   TRUST METRICS & IMPACT NUMBERS
    ========================================================================== */
 .trust-metrics-bar {
   background-color: #ffffff;
@@ -1485,7 +1485,7 @@ li { margin-bottom: 0.5rem; }
 }
 
 /* ==========================================================================
-   PROGRAMMES CARDS (Strictly Equal Weight & Clear NGO Categories)
+   PROGRAMMES CARDS (Strictly Equal Weight & Clear Categories)
    ========================================================================== */
 .programmes-grid {
   display: grid;

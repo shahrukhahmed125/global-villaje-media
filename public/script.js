@@ -171,8 +171,8 @@ $(document).ready(function () {
     },
     {
       id: 'echoes-of-us-legacy-film',
-      title: 'Echoes of Us: Therapeutic Legacy Films & Elder Storytelling',
-      desc: 'Preserving the living histories, Windrush migration journeys, and cherished memories of elderly community members, supporting families navigating dementia and cognitive decline.',
+      title: 'Echoes of Us: Community & Legacy Storytelling',
+      desc: 'Preserving stories of identity, migration, family, care, resilience, culture and belonging through guided conversations, story circles, audio and film.',
       category: 'echoes',
       categoryLabel: 'Echoes of Us (Legacy)',
       thumbnail: 'https://images.unsplash.com/photo-1516726817505-f5ed825624d8?auto=format&fit=crop&w=720&q=80',
@@ -184,14 +184,14 @@ $(document).ready(function () {
     },
     {
       id: 'health-wellness-wellbeing-hour-broadcast',
-      title: 'The Health, Wellness & Wellbeing Hour (Live Chalkhill Broadcast)',
-      desc: 'Weekly flagship radio broadcast bridging NHS clinical knowledge and grassroots community experience, hosted by Charles Ogunnowo Olorunfemi.',
+      title: 'The Health, Wellness & Wellbeing Hour',
+      desc: 'Weekly flagship radio broadcast bridging professional health insight and grassroots community experience, hosted by Charles Ogunnowo Olorunfemi.',
       category: 'radio',
       categoryLabel: 'Radio Broadcast',
       thumbnail: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=720&q=80',
       duration: '58 mins',
-      date: 'Weekly Live',
-      guest: 'Charles Ogunnowo Olorunfemi & NHS Guests',
+      date: 'Weekly',
+      guest: 'Charles Ogunnowo Olorunfemi & Health Guests',
       youtubeUrl: 'https://www.youtube.com/@GlobalVillajeMedia',
       youtubeEmbedId: ''
     }
@@ -984,7 +984,6 @@ $(document).ready(function () {
   }
 
   // Initialize interactive features
-  initHero3DStudio();
   initHeroWaveCanvas();
   initAmbientGlobalCanvas();
   initHeroAudioPreview();
